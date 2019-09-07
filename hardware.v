@@ -87,14 +87,15 @@ module hardware (
     wire [3:0]  iomem_wstrb;
     wire [31:0] iomem_addr;
     wire [31:0] iomem_wdata;
-    wire [31:0] clock_out;
+    reg [31:0] clock_out;
     reg  [31:0] iomem_rdata;
 
     reg [31:0] clockO=0;
     reg [31:0] gpio;
+    reg [31:0] leds;
     //assign user_led = gpio[0];
-    assign user_led = clockO[0];
-    assign pin_20 = !clockO[0];
+    assign user_led = leds[0];
+    assign pin_20 = !leds[0];
 
     always @(posedge clk) begin
         if (!resetn) begin
@@ -105,7 +106,7 @@ module hardware (
             ///////////////////////////
             // GPIO Peripheral
             ///////////////////////////
-            if (iomem_valid && !iomem_ready && iomem_addr[31:8] == 24'h030001) begin
+            if (iomem_valid && !iomem_ready && iomem_addr[31:8] == 24'h030000) begin
                 iomem_ready <= 1;
                 iomem_rdata <= gpio;
                 if (iomem_wstrb[0]) gpio[ 7: 0] <= iomem_wdata[ 7: 0];
@@ -114,8 +115,19 @@ module hardware (
                 if (iomem_wstrb[3]) gpio[31:24] <= iomem_wdata[31:24];
             end
 
+            if (iomem_valid && !iomem_ready && iomem_addr[31:8] == 24'h030001) begin
+                iomem_ready <= 1;
+                iomem_rdata <= leds;
+                if (iomem_wstrb[0]) leds[ 7: 0] <= iomem_wdata[ 7: 0];
+                if (iomem_wstrb[1]) leds[15: 8] <= iomem_wdata[15: 8];
+                if (iomem_wstrb[2]) leds[23:16] <= iomem_wdata[23:16];
+                if (iomem_wstrb[3]) leds[31:24] <= iomem_wdata[31:24];
+                //leds=32'hffffffff;
+            end
+
             if (iomem_valid && !iomem_ready && iomem_addr[31:8] == 24'h030002) begin
                 iomem_ready <= 1;
+                iomem_rdata <= clock_out;
                 if (iomem_wstrb[0]) clockO[ 7: 0] <= iomem_wdata[ 7: 0];
                 if (iomem_wstrb[1]) clockO[15: 8] <= iomem_wdata[15: 8];
                 if (iomem_wstrb[2]) clockO[23:16] <= iomem_wdata[23:16];

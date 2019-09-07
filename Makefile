@@ -3,7 +3,7 @@ upload: hardware.bin firmware.bin
 	tinyprog -p hardware.bin -u firmware.bin
 
 
-hardware.blif: hardware.v spimemio.v simpleuart.v picosoc.v picorv32.v clock.v
+hardware.blif: hardware.v spimemio.v simpleuart.v picosoc.v picorv32.v clock.v pwm.v
 	yosys -ql hardware.log -p 'synth_ice40 -top hardware -blif hardware.blif' $^
 
 hardware.asc: hardware.pcf hardware.blif
@@ -15,7 +15,7 @@ hardware.bin: hardware.asc
 
 
 firmware.elf: sections.lds start.S firmware.c 
-	riscv32-unknown-elf-gcc -march=rv32imc -nostartfiles -Wl,-Bstatic,-T,sections.lds,--strip-debug,-Map=firmware.map,--cref  -ffreestanding -nostdlib -o firmware.elf start.S firmware.c
+	riscv32-unknown-elf-gcc -march=rv32imc -nostartfiles -Wl,-Bstatic,-T,sections.lds,--strip-debug,-Map=firmware.map,--cref  -ffreestanding -o firmware.elf start.S firmware.c -lm 
 
 firmware.bin: firmware.elf
 	riscv32-unknown-elf-objcopy -O binary firmware.elf /dev/stdout > firmware.bin
