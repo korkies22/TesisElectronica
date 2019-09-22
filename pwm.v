@@ -7,14 +7,14 @@ module pwm #(
 )(
 	input clk,
     input resetn,
-	input pwm_in,
+	input [31:0] pwm_in,
 	output pwm_out,
 );
 	reg [31:0] counterI=0;
 
     reg pwm_counter=0;
 
-	reg [8:0] count_temp=0;
+	reg [9:0] count_temp=0;
 
 	reg state= 0;
 
@@ -25,16 +25,18 @@ module pwm #(
 			counterI <= 0;
             pwm_counter <= 1;
 			state<=0;
+			count_temp<= 0;
 		end else begin
 			counterI<= counterI+1;
-            if (counterI[14] == 1) begin
+            if (counterI[6] == 1) begin
 				count_temp<=count_temp+1;
+				counterI<=0;
 			end
 			if (state== 1'b0 && count_temp >= pwm_in) begin
 				pwm_counter<=0;
 				state= 1'b1;
 			end
-			if (state== 1'b1 && count_temp[7] == 1) begin
+			if (state== 1'b1 && count_temp[8] == 1 && pwm_in > 0) begin
 				pwm_counter<=1;
 				state= 1'b0;
 				count_temp<=0;

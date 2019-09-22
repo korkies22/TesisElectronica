@@ -93,9 +93,11 @@ module hardware (
     reg [31:0] clockO=0;
     reg [31:0] gpio;
     reg [31:0] leds;
+    reg pwm_out;
+    reg [31:0] pwm_connector=0;
     //assign user_led = gpio[0];
-    assign user_led = leds[0];
-    assign pin_20 = !leds[0];
+    assign user_led = !pwm_out;
+    assign pin_20 = pwm_out;
 
     always @(posedge clk) begin
         if (!resetn) begin
@@ -134,6 +136,15 @@ module hardware (
                 if (iomem_wstrb[3]) clockO[31:24] <= iomem_wdata[31:24];
             end
 
+            if (iomem_valid && !iomem_ready && iomem_addr[31:8] == 24'h030003) begin
+                iomem_ready <= 1;
+                iomem_rdata <= clock_out;
+                if (iomem_wstrb[0]) pwm_connector[ 7: 0] <= iomem_wdata[ 7: 0];
+                if (iomem_wstrb[1]) pwm_connector[15: 8] <= iomem_wdata[15: 8];
+                if (iomem_wstrb[2]) pwm_connector[23:16] <= iomem_wdata[23:16];
+                if (iomem_wstrb[3]) pwm_connector[31:24] <= iomem_wdata[31:24];
+            end
+
             
             ///////////////////////////
             // Template Peripheral
@@ -153,6 +164,13 @@ module hardware (
 		.clk         (clk         ),
 		.resetn      (resetn      ),
 		.clock_out   (clock_out)
+	);
+
+    pwm pwm (
+		.clk         (clk         ),
+		.resetn      (resetn      ),
+        .pwm_in      (pwm_connector      ),
+		.pwm_out     (pwm_out     )
 	);
 
 
