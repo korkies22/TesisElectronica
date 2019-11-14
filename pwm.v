@@ -33,11 +33,15 @@ module pwm #(
 				counterI<=0;
 			end
 			if (state== 1'b0 && count_temp >= pwm_in) begin
-				pwm_counter<=0;
+				if (pwm_in<255) begin
+					pwm_counter<=0;
+				end
 				state= 1'b1;
 			end
-			if (state== 1'b1 && count_temp[8] == 1 && pwm_in > 0) begin
-				pwm_counter<=1;
+			if (state== 1'b1 && count_temp[8] == 1) begin
+				if (pwm_in>0) begin
+					pwm_counter<=1;
+				end
 				state= 1'b0;
 				count_temp<=0;
 			end
