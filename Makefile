@@ -3,7 +3,7 @@ upload: hardware.bin firmware.bin
 	tinyprog -p hardware.bin -u firmware.bin
 
 
-hardware.blif: hardware.v spimemio.v simpleuart.v picosoc.v picorv32.v clock.v pwm.v
+hardware.blif: hardware.v spimemio.v simpleuart.v picosoc.v picorv32.v clock.v pwm.v encoder.v
 	yosys -ql hardware.log -p 'synth_ice40 -top hardware -blif hardware.blif' $^
 
 hardware.asc: hardware.pcf hardware.blif

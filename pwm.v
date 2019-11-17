@@ -1,5 +1,5 @@
 /*
- * Clock Module
+ * PWM Module
  */
 
 module pwm #(
