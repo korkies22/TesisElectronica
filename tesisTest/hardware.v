@@ -26,12 +26,20 @@ module hardware (
     output pin_usbn,
 
     // hardware UART
-    output pin_1,
-    input pin_2,
+    output uart_out,
+    input uart_in,
 
-    // onboard LED
-    output user_led,
-    output pin_20,
+    // PWM
+    output pinPwmIzqF,
+    output pinPwmIzqB,
+    output pinPwmDerF,
+    output pinPwmDerB,
+
+    // encoders
+    input pinEncoderIF,
+    input pinEncoderIB,
+    input pinEncoderDF,
+    input pinEncoderDB,
 
     // onboard SPI flash interface
     output flash_csb,
@@ -95,14 +103,17 @@ module hardware (
     reg [31:0] leds;
 
     reg pwm_out;
-    reg [31:0] pwm_connector=0;
+    reg [31:0] pwm_connectorIF=0;
+    reg [31:0] pwm_connectorIB=0;
+    reg [31:0] pwm_connectorDF=0;
+    reg [31:0] pwm_connectorDB=0;
 
     reg writeEncoderL=0;
     reg writeEncoderR=0;
-    wire [31:0] encoderValueL;
-    wire [31:0] encoderValueR;
-    reg [31:0] encoderDataL=0;
-    reg [31:0] encoderDataR=0;
+    wire [31:0] encoderValueI;
+    wire [31:0] encoderValueD;
+    reg [31:0] encoderDataI=0;
+    reg [31:0] encoderDataD=0;
     
 
     //assign user_led = gpio[0];
@@ -120,25 +131,6 @@ module hardware (
             ///////////////////////////
             // GPIO Peripheral
             ///////////////////////////
-            if (iomem_valid && !iomem_ready && iomem_addr[31:8] == 24'h030000) begin
-                iomem_ready <= 1;
-                iomem_rdata <= gpio;
-                if (iomem_wstrb[0]) gpio[ 7: 0] <= iomem_wdata[ 7: 0];
-                if (iomem_wstrb[1]) gpio[15: 8] <= iomem_wdata[15: 8];
-                if (iomem_wstrb[2]) gpio[23:16] <= iomem_wdata[23:16];
-                if (iomem_wstrb[3]) gpio[31:24] <= iomem_wdata[31:24];
-            end
-
-            if (iomem_valid && !iomem_ready && iomem_addr[31:8] == 24'h030001) begin
-                iomem_ready <= 1;
-                iomem_rdata <= leds;
-                if (iomem_wstrb[0]) leds[ 7: 0] <= iomem_wdata[ 7: 0];
-                if (iomem_wstrb[1]) leds[15: 8] <= iomem_wdata[15: 8];
-                if (iomem_wstrb[2]) leds[23:16] <= iomem_wdata[23:16];
-                if (iomem_wstrb[3]) leds[31:24] <= iomem_wdata[31:24];
-                //leds=32'hffffffff;
-            end
-
             if (iomem_valid && !iomem_ready && iomem_addr[31:8] == 24'h030002) begin
                 iomem_ready <= 1;
                 iomem_rdata <= clock_out;
@@ -150,21 +142,54 @@ module hardware (
 
             if (iomem_valid && !iomem_ready && iomem_addr[31:8] == 24'h030003) begin
                 iomem_ready <= 1;
-                iomem_rdata <= clock_out;
-                if (iomem_wstrb[0]) pwm_connector[ 7: 0] <= iomem_wdata[ 7: 0];
-                if (iomem_wstrb[1]) pwm_connector[15: 8] <= iomem_wdata[15: 8];
-                if (iomem_wstrb[2]) pwm_connector[23:16] <= iomem_wdata[23:16];
-                if (iomem_wstrb[3]) pwm_connector[31:24] <= iomem_wdata[31:24];
+                iomem_rdata <= encoderValueI;
+                writeEncoderI<= iomem_wstrb!=0
+                if (iomem_wstrb[0]) encoderDataI[ 7: 0] <= iomem_wdata[ 7: 0];
+                if (iomem_wstrb[1]) encoderDataI[15: 8] <= iomem_wdata[15: 8];
+                if (iomem_wstrb[2]) encoderDataI[23:16] <= iomem_wdata[23:16];
+                if (iomem_wstrb[3]) encoderDataI[31:24] <= iomem_wdata[31:24];
             end
 
             if (iomem_valid && !iomem_ready && iomem_addr[31:8] == 24'h030004) begin
                 iomem_ready <= 1;
-                iomem_rdata <= encoderValueL;
-                writeEncoderL<= iomem_wstrb!=0
-                if (iomem_wstrb[0]) encoderDataL[ 7: 0] <= iomem_wdata[ 7: 0];
-                if (iomem_wstrb[1]) encoderDataL[15: 8] <= iomem_wdata[15: 8];
-                if (iomem_wstrb[2]) encoderDataL[23:16] <= iomem_wdata[23:16];
-                if (iomem_wstrb[3]) encoderDataL[31:24] <= iomem_wdata[31:24];
+                iomem_rdata <= encoderValueD;
+                writeEncoderD<= iomem_wstrb!=0
+                if (iomem_wstrb[0]) encoderDataD[ 7: 0] <= iomem_wdata[ 7: 0];
+                if (iomem_wstrb[1]) encoderDataD[15: 8] <= iomem_wdata[15: 8];
+                if (iomem_wstrb[2]) encoderDataD[23:16] <= iomem_wdata[23:16];
+                if (iomem_wstrb[3]) encoderDataD[31:24] <= iomem_wdata[31:24];
+            end
+
+            if (iomem_valid && !iomem_ready && iomem_addr[31:8] == 24'h030005) begin
+                iomem_ready <= 1;
+                if (iomem_wstrb[0]) pwm_connectorIF[ 7: 0] <= iomem_wdata[ 7: 0];
+                if (iomem_wstrb[1]) pwm_connectorIF[15: 8] <= iomem_wdata[15: 8];
+                if (iomem_wstrb[2]) pwm_connectorIF[23:16] <= iomem_wdata[23:16];
+                if (iomem_wstrb[3]) pwm_connectorIF[31:24] <= iomem_wdata[31:24];
+            end
+
+            if (iomem_valid && !iomem_ready && iomem_addr[31:8] == 24'h030006) begin
+                iomem_ready <= 1;
+                if (iomem_wstrb[0]) pwm_connectorIB[ 7: 0] <= iomem_wdata[ 7: 0];
+                if (iomem_wstrb[1]) pwm_connectorIB[15: 8] <= iomem_wdata[15: 8];
+                if (iomem_wstrb[2]) pwm_connectorIB[23:16] <= iomem_wdata[23:16];
+                if (iomem_wstrb[3]) pwm_connectorIB[31:24] <= iomem_wdata[31:24];
+            end
+
+            if (iomem_valid && !iomem_ready && iomem_addr[31:8] == 24'h030007) begin
+                iomem_ready <= 1;
+                if (iomem_wstrb[0]) pwm_connectorDF[ 7: 0] <= iomem_wdata[ 7: 0];
+                if (iomem_wstrb[1]) pwm_connectorDF[15: 8] <= iomem_wdata[15: 8];
+                if (iomem_wstrb[2]) pwm_connectorDF[23:16] <= iomem_wdata[23:16];
+                if (iomem_wstrb[3]) pwm_connectorDF[31:24] <= iomem_wdata[31:24];
+            end
+
+            if (iomem_valid && !iomem_ready && iomem_addr[31:8] == 24'h030008) begin
+                iomem_ready <= 1;
+                if (iomem_wstrb[0]) pwm_connectorDB[ 7: 0] <= iomem_wdata[ 7: 0];
+                if (iomem_wstrb[1]) pwm_connectorDB[15: 8] <= iomem_wdata[15: 8];
+                if (iomem_wstrb[2]) pwm_connectorDB[23:16] <= iomem_wdata[23:16];
+                if (iomem_wstrb[3]) pwm_connectorDB[31:24] <= iomem_wdata[31:24];
             end
 
             
@@ -188,31 +213,52 @@ module hardware (
 		.clock_out   (clock_out)
 	);
 
-    pwm pwm (
+    pwm pwmIF (
 		.clk         (clk         ),
 		.resetn      (resetn      ),
         .pwm_in      (pwm_connector      ),
-		.pwm_out     (pwm_out     )
+		.pwm_out     (pinPwmIzqF     )
+	);
+
+    pwm pwmIB (
+		.clk         (clk         ),
+		.resetn      (resetn      ),
+        .pwm_in      (pwm_connector      ),
+		.pwm_out     (pinPwmIzqB    )
+	);
+
+    pwm pwmDF (
+		.clk         (clk         ),
+		.resetn      (resetn      ),
+        .pwm_in      (pwm_connector      ),
+		.pwm_out     (pinPwmDerF     )
+	);
+
+    pwm pwmDB (
+		.clk         (clk         ),
+		.resetn      (resetn      ),
+        .pwm_in      (pwm_connector      ),
+		.pwm_out     (pinPwmDerB    )
 	);
 
     encoder encoderL (
 		.clk         (clk         ),
 		.resetn      (resetn      ),
-        .writeEncoder      (writeEncoderL      ),
-        .setEncoderData      (encoderDataL      ),
-		.encoderValue     (encoderValueL     ),
-        .pinEncoderF     (pinEncoderLF     ),
-        .pinEncoderB     (pinEncoderLB     )
+        .writeEncoder      (writeEncoderI      ),
+        .setEncoderData      (encoderDataI      ),
+		.encoderValue     (encoderValueI     ),
+        .pinEncoderF     (pinEncoderIF     ),
+        .pinEncoderB     (pinEncoderIB     )
 	);
 
     encoder encoderR (
 		.clk         (clk         ),
 		.resetn      (resetn      ),
-        .writeEncoder      (writeEncoderR      ),
-        .setEncoderData      (encoderDataR      ),
-		.encoderValue     (encoderValueR     ),
-        .pinEncoderF     (pinEncoderRF     ),
-        .pinEncoderB     (pinEncoderRB     )
+        .writeEncoder      (writeEncoderD      ),
+        .setEncoderData      (encoderDataD     ),
+		.encoderValue     (encoderValueD     ),
+        .pinEncoderF     (pinEncoderDF     ),
+        .pinEncoderB     (pinEncoderDB     )
 	);
 
 
@@ -228,8 +274,8 @@ module hardware (
         .clk          (clk         ),
         .resetn       (resetn      ),
 
-        .ser_tx       (pin_1       ),
-        .ser_rx       (pin_2       ),
+        .ser_tx       (uart_out       ),
+        .ser_rx       (uart_in       ),
 
         .flash_csb    (flash_csb   ),
         .flash_clk    (flash_clk   ),

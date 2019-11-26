@@ -93,8 +93,18 @@ module hardware (
     reg [31:0] clockO=0;
     reg [31:0] gpio;
     reg [31:0] leds;
+
     reg pwm_out;
     reg [31:0] pwm_connector=0;
+
+    reg writeEncoderL=0;
+    reg writeEncoderR=0;
+    wire [31:0] encoderValueL;
+    wire [31:0] encoderValueR;
+    reg [31:0] encoderDataL=0;
+    reg [31:0] encoderDataR=0;
+    
+
     //assign user_led = gpio[0];
     assign user_led = !pwm_out;
     assign pin_20 = pwm_out;
@@ -104,6 +114,8 @@ module hardware (
             gpio <= 0;
         end else begin
             iomem_ready <= 0;
+            writeEncoderL <=0; 
+            writeEncoderR <=0; 
 
             ///////////////////////////
             // GPIO Peripheral
@@ -145,6 +157,16 @@ module hardware (
                 if (iomem_wstrb[3]) pwm_connector[31:24] <= iomem_wdata[31:24];
             end
 
+            if (iomem_valid && !iomem_ready && iomem_addr[31:8] == 24'h030004) begin
+                iomem_ready <= 1;
+                iomem_rdata <= encoderValueL;
+                writeEncoderL<= iomem_wstrb!=0
+                if (iomem_wstrb[0]) encoderDataL[ 7: 0] <= iomem_wdata[ 7: 0];
+                if (iomem_wstrb[1]) encoderDataL[15: 8] <= iomem_wdata[15: 8];
+                if (iomem_wstrb[2]) encoderDataL[23:16] <= iomem_wdata[23:16];
+                if (iomem_wstrb[3]) encoderDataL[31:24] <= iomem_wdata[31:24];
+            end
+
             
             ///////////////////////////
             // Template Peripheral
@@ -171,6 +193,26 @@ module hardware (
 		.resetn      (resetn      ),
         .pwm_in      (pwm_connector      ),
 		.pwm_out     (pwm_out     )
+	);
+
+    encoder encoderL (
+		.clk         (clk         ),
+		.resetn      (resetn      ),
+        .writeEncoder      (writeEncoderL      ),
+        .setEncoderData      (encoderDataL      ),
+		.encoderValue     (encoderValueL     ),
+        .pinEncoderF     (pinEncoderLF     ),
+        .pinEncoderB     (pinEncoderLB     )
+	);
+
+    encoder encoderR (
+		.clk         (clk         ),
+		.resetn      (resetn      ),
+        .writeEncoder      (writeEncoderR      ),
+        .setEncoderData      (encoderDataR      ),
+		.encoderValue     (encoderValueR     ),
+        .pinEncoderF     (pinEncoderRF     ),
+        .pinEncoderB     (pinEncoderRB     )
 	);
 
 
