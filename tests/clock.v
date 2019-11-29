@@ -9,22 +9,17 @@ module clock (
 );
 	reg [31:0] counterI=0;
 
-    reg [31:0] counterO=32'hffffffff;
+    reg [31:0] counterO=32'h00000000;
 
     assign clock_out = counterO;
 
 	always @(posedge clk) begin
-        if (!resetn) begin
-			counterI <= 0;
-            counterO <= 32'hffffffff;
-		end else begin
-			counterI<= counterI+1;
-            if (counterI[10] == 1) begin
-                counterI <= 0;
-                counterO<= counterO+1;
-			end
+		counterI <= counterI + 1;
+		if(counterI == 7)
+		begin
+			counterI<=0;
+			counterO <= counterO+1;
 		end
-		
 	end
 
 

@@ -15,39 +15,35 @@ module encoder (
     reg [3:0] encoderCounter=0;
     assign encoderValue = encoderCount;
 
-    always @(*) begin
-
-    pinEncoderF
+    reg pinEncoderFPrev=0;
 
 	always @(posedge clk) begin
+        if (pinEncoderFPrev!=pinEncoderF) begin
+            if(pinEncoderF==1'b1) begin
+                encoderCounter<=1;
+            end
+            pinEncoderFPrev<=pinEncoderF;
+        end
         if (!resetn) begin
 			encoderCount <= 0;
             encoderCounter <= 0;
 		end else begin
             if (writeEncoder==1'b1) begin
-                encoderValue<=encoderData
+                encoderCount<=encoderData;
             end
-            if (encoderCounter>=1 && encoderCounter[3]!=1b'1 && pinEncoderF==1b'1) begin
+            if (encoderCounter>=1 && encoderCounter[1]!=1'b1 && pinEncoderF==1'b1) begin
                 encoderCounter<=encoderCounter+1;
-            end
-            if (encoderCounter[3]==1b'1) begin
+            end else if (encoderCounter[1]==1'b1) begin
                 if (pinEncoderB==1'b0) begin
                     encoderCount<=encoderCount+1;
-                else
+                end else begin
                     encoderCount<=encoderCount-1;
                 end
-            encoderCounter<=0;
-            else begin
-            encoderCounter<=0;
+                encoderCounter<=0;
             end
 		end
 		
 	end
-
-    always @(posedge pinEncoderF) begin
-    encoderCounter<=1;
-    end
-
 
 
 endmodule

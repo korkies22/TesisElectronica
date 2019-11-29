@@ -7,175 +7,181 @@ Info: max_span_hack is enabled: estimate is conservative.
 Report for critical path:
 -------------------------
 
-        lc40_14_25_5 (LogicCell40) [clk] -> lcout: 0.640 ns
-     0.640 ns net_55393 (soc.cpu.mem_addr[25])
-        odrv_14_25_55393_59619 (Odrv4) I -> O: 0.372 ns
-        t16852 (LocalMux) I -> O: 0.330 ns
-        inmux_14_28_59889_59923 (InMux) I -> O: 0.260 ns
-        lc40_14_28_2 (LogicCell40) in3 -> lcout: 0.316 ns
-     1.916 ns net_55759 ($abc$64360$auto$alumacc.cc:474:replace_alu$7234.BB[25])
-        odrv_14_28_55759_58738 (Odrv12) I -> O: 0.540 ns
-        t16999 (Span12Mux_h12) I -> O: 0.540 ns
-        t16998 (Span12Mux_v12) I -> O: 0.540 ns
-        t16997 (Sp12to4) I -> O: 0.449 ns
-        t17005 (Span4Mux_v4) I -> O: 0.372 ns
-        t17004 (IoSpan4Mux) I -> O: 0.323 ns
-        t17003 (IoSpan4Mux) I -> O: 0.323 ns
-        t17002 (Span4Mux_h4) I -> O: 0.316 ns
-        t17001 (LocalMux) I -> O: 0.330 ns
-        inmux_3_31_16073_16104 (InMux) I -> O: 0.260 ns
-        lc40_3_31_0 (LogicCell40) in1 -> carryout: 0.260 ns
-     6.167 ns t505
-        lc40_3_31_1 (LogicCell40) carryin -> carryout: 0.126 ns
-     6.293 ns t507
-        lc40_3_31_2 (LogicCell40) carryin -> carryout: 0.126 ns
-     6.419 ns t509
-        lc40_3_31_3 (LogicCell40) carryin -> carryout: 0.126 ns
-     6.545 ns t511
-        lc40_3_31_4 (LogicCell40) carryin -> carryout: 0.126 ns
-     6.672 ns t513
-        lc40_3_31_5 (LogicCell40) carryin -> carryout: 0.126 ns
-     6.798 ns t515
-        lc40_3_31_6 (LogicCell40) carryin -> carryout: 0.126 ns
-     6.924 ns net_16138 ($abc$64360$auto$alumacc.cc:491:replace_alu$7247[7]$2)
-        inmux_3_31_16138_16148 (InMux) I -> O: 0.260 ns
-        lc40_3_31_7 (LogicCell40) in3 -> lcout: 0.316 ns
-     7.499 ns net_11959 ($abc$64360$auto$alumacc.cc:491:replace_alu$7247[7])
-        odrv_3_31_11959_3491 (Odrv12) I -> O: 0.540 ns
-        t6707 (Sp12to4) I -> O: 0.449 ns
-        t6706 (Span4Mux_v4) I -> O: 0.372 ns
-        t6705 (LocalMux) I -> O: 0.330 ns
-        inmux_11_29_47769_47809 (InMux) I -> O: 0.260 ns
-        lc40_11_29_1 (LogicCell40) in3 -> lcout: 0.316 ns
-     9.765 ns net_43650 ($abc$64360$techmap\soc.$logic_and$picosoc.v:109$1151_Y_new_)
-        odrv_11_29_43650_47506 (Odrv4) I -> O: 0.372 ns
-        t13057 (Span4Mux_v4) I -> O: 0.372 ns
-        t13065 (Span4Mux_h4) I -> O: 0.316 ns
-        t13064 (Span4Mux_v4) I -> O: 0.372 ns
-        t13071 (Span4Mux_v4) I -> O: 0.372 ns
-        t13070 (Span4Mux_v4) I -> O: 0.372 ns
-        t13069 (Span4Mux_v4) I -> O: 0.372 ns
-        t13068 (LocalMux) I -> O: 0.330 ns
-        inmux_15_27_63836_63882 (InMux) I -> O: 0.260 ns
-        t2720 (CascadeMux) I -> O: 0.000 ns
-        lc40_15_27_3 (LogicCell40) in2 -> lcout: 0.379 ns
-    13.278 ns net_59714 ($abc$64360$new_n4259_)
-        t18679 (LocalMux) I -> O: 0.330 ns
-        inmux_15_27_63848_63868 (InMux) I -> O: 0.260 ns
-        lc40_15_27_1 (LogicCell40) in0 -> lcout: 0.449 ns
-    14.316 ns net_59712 ($abc$64360$new_n4244_)
-        odrv_15_27_59712_63927 (Odrv4) I -> O: 0.372 ns
-        t18701 (Span4Mux_v4) I -> O: 0.372 ns
-        t18700 (Span4Mux_v4) I -> O: 0.372 ns
-        t18699 (LocalMux) I -> O: 0.330 ns
-        inmux_18_21_75320_75379 (InMux) I -> O: 0.260 ns
-        t3271 (CascadeMux) I -> O: 0.000 ns
-        lc40_18_21_4 (LogicCell40) in2 -> lcout: 0.379 ns
-    16.399 ns net_71207 (soc.cpu.mem_xfer)
-        odrv_18_21_71207_75431 (Odrv4) I -> O: 0.372 ns
-        t23273 (Span4Mux_v4) I -> O: 0.372 ns
-        t23272 (Span4Mux_v4) I -> O: 0.372 ns
-        t23271 (Span4Mux_v4) I -> O: 0.372 ns
-        t23297 (Span4Mux_h4) I -> O: 0.316 ns
-        t23296 (Span4Mux_v4) I -> O: 0.372 ns
-        t23295 (Span4Mux_h4) I -> O: 0.316 ns
-        t23294 (Span4Mux_h4) I -> O: 0.316 ns
-        t23293 (Span4Mux_h4) I -> O: 0.316 ns
-        t23292 (IoSpan4Mux) I -> O: 0.323 ns
-        t23291 (Span4Mux_h4) I -> O: 0.316 ns
-        t23290 (Span4Mux_h4) I -> O: 0.316 ns
-        t23289 (Span4Mux_v4) I -> O: 0.372 ns
-        t23288 (LocalMux) I -> O: 0.330 ns
-        inmux_20_14_82619_82646 (InMux) I -> O: 0.260 ns
-        lc40_20_14_0 (LogicCell40) in0 -> lcout: 0.449 ns
-    21.884 ns net_78495 ($abc$64360$new_n4629_)
-        t25490 (LocalMux) I -> O: 0.330 ns
-        inmux_20_14_82613_82684 (InMux) I -> O: 0.260 ns
-        t3614 (CascadeMux) I -> O: 0.000 ns
-        lc40_20_14_6 (LogicCell40) in2 -> lcout: 0.379 ns
-    22.852 ns net_78501 ($abc$64360$soc.cpu.mem_rdata_latched[15]_new_inv_)
-        odrv_20_14_78501_81968 (Odrv12) I -> O: 0.540 ns
-        t25499 (Span12Mux_v12) I -> O: 0.540 ns
-        t25505 (Sp12to4) I -> O: 0.449 ns
-        t25510 (IoSpan4Mux) I -> O: 0.323 ns
-        t25513 (Span4Mux_v4) I -> O: 0.372 ns
-        t25512 (Span4Mux_v4) I -> O: 0.372 ns
-        t25511 (LocalMux) I -> O: 0.330 ns
-        inmux_20_10_82137_82178 (InMux) I -> O: 0.260 ns
-        lc40_20_10_4 (LogicCell40) in0 -> lcout: 0.449 ns
-    26.485 ns net_78007 ($abc$64360$auto$opt_reduce.cc:132:opt_mux$6940_new_)
-        odrv_20_10_78007_74061 (Odrv4) I -> O: 0.372 ns
-        t25304 (Span4Mux_v4) I -> O: 0.372 ns
-        t25305 (LocalMux) I -> O: 0.330 ns
-        inmux_22_7_89933_89963 (InMux) I -> O: 0.260 ns
-        lc40_22_7_4 (LogicCell40) in0 -> lcout: 0.449 ns
-    28.266 ns net_85792 ($abc$64360$techmap$techmap\soc.cpu.$procmux$4530.$and$/usr/local/bin/../share/yosys/techmap.v:434$14300_Y_new_)
-        odrv_22_7_85792_89107 (Odrv12) I -> O: 0.540 ns
-        t27738 (Sp12to4) I -> O: 0.449 ns
-        t27737 (LocalMux) I -> O: 0.330 ns
-        inmux_21_5_85587_85628 (InMux) I -> O: 0.260 ns
-        lc40_21_5_2 (LogicCell40) in0 -> lcout: 0.449 ns
-    30.293 ns net_81467 ($abc$64360$new_n4811_)
-        odrv_21_5_81467_85430 (Odrv12) I -> O: 0.540 ns
-        t26645 (Sp12to4) I -> O: 0.449 ns
-        t26644 (LocalMux) I -> O: 0.330 ns
-        inmux_20_9_82002_82052 (InMux) I -> O: 0.260 ns
-        lc40_20_9_3 (LogicCell40) in3 -> lcout: 0.316 ns
-    32.187 ns net_77883 ($abc$64360$new_n4808_)
-        t25234 (LocalMux) I -> O: 0.330 ns
-        inmux_20_9_82001_82046 (InMux) I -> O: 0.260 ns
-        lc40_20_9_2 (LogicCell40) in3 -> lcout: 0.316 ns
-    33.091 ns net_77882 ($abc$64360$techmap8194\soc.cpu.cpuregs.regs.0.0.1.A1ADDR_11[3])
-        odrv_20_9_77882_78026 (Odrv4) I -> O: 0.372 ns
-        t25249 (Span4Mux_h4) I -> O: 0.316 ns
-        t25248 (Span4Mux_h4) I -> O: 0.316 ns
-        t25254 (Span4Mux_h4) I -> O: 0.316 ns
-        t25253 (Span4Mux_v4) I -> O: 0.372 ns
-        t25252 (Span4Mux_h4) I -> O: 0.316 ns
-        t25264 (Span4Mux_h4) I -> O: 0.316 ns
-        t25263 (Span4Mux_h4) I -> O: 0.316 ns
-        t25262 (Span4Mux_h4) I -> O: 0.316 ns
-        t25261 (IoSpan4Mux) I -> O: 0.323 ns
-        t25260 (Span4Mux_h4) I -> O: 0.316 ns
-        t25259 (Span4Mux_h4) I -> O: 0.316 ns
-        t25258 (Span4Mux_v4) I -> O: 0.372 ns
-        t25257 (Span4Mux_h4) I -> O: 0.316 ns
-        t25256 (Span4Mux_v4) I -> O: 0.372 ns
-        t25255 (LocalMux) I -> O: 0.330 ns
-        inmux_13_12_53833_53864 (InMux) I -> O: 0.260 ns
-        lc40_13_12_0 (LogicCell40) in1 -> lcout: 0.400 ns
-    39.046 ns net_49712 ($abc$64360$auto$simplemap.cc:127:simplemap_reduce$24185[1]_new_inv_)
-        t14971 (LocalMux) I -> O: 0.330 ns
-        inmux_13_12_53854_53876 (InMux) I -> O: 0.260 ns
-        lc40_13_12_2 (LogicCell40) in1 -> lcout: 0.400 ns
-    40.035 ns net_49714 ($abc$64360$auto$simplemap.cc:256:simplemap_eqne$24183)
-        odrv_13_12_49714_49859 (Odrv4) I -> O: 0.372 ns
-        t15141 (LocalMux) I -> O: 0.330 ns
-        inmux_12_12_49773_49834 (SRMux) I -> O: 0.463 ns
-    41.199 ns net_49834 ($abc$64360$auto$simplemap.cc:256:simplemap_eqne$24183)
-        lc40_12_12_7 (LogicCell40) sr [setup]: 0.140 ns
-    41.339 ns net_45642 ($abc$64360$auto$memory_bram.cc:945:replace_cell$8056[15])
+        lc40_7_24_5 (LogicCell40) [clk] -> lcout: 0.640 ns
+     0.640 ns net_27404 (soc.cpu.mem_addr[12])
+        odrv_7_24_27404_27188 (Odrv4) I -> O: 0.372 ns
+        t15633 (Span4Mux_h4) I -> O: 0.316 ns
+        t15632 (Span4Mux_h4) I -> O: 0.316 ns
+        t15631 (Span4Mux_v4) I -> O: 0.372 ns
+        t15630 (Span4Mux_h4) I -> O: 0.316 ns
+        t15638 (Span4Mux_v4) I -> O: 0.372 ns
+        t15662 (Span4Mux_v4) I -> O: 0.372 ns
+        t15661 (Span4Mux_h4) I -> O: 0.316 ns
+        t15660 (Span4Mux_h4) I -> O: 0.316 ns
+        t15659 (Span4Mux_v4) I -> O: 0.372 ns
+        t15658 (Span4Mux_h4) I -> O: 0.316 ns
+        t15657 (Span4Mux_v4) I -> O: 0.372 ns
+        t15656 (Span4Mux_h4) I -> O: 0.316 ns
+        t15655 (Span4Mux_h4) I -> O: 0.316 ns
+        t15654 (Span4Mux_v4) I -> O: 0.372 ns
+        t15653 (Span4Mux_v4) I -> O: 0.372 ns
+        t15652 (IoSpan4Mux) I -> O: 0.323 ns
+        t15651 (Span4Mux_h4) I -> O: 0.316 ns
+        t15650 (Span4Mux_v4) I -> O: 0.372 ns
+        t15649 (Span4Mux_h4) I -> O: 0.316 ns
+        t15648 (Span4Mux_v4) I -> O: 0.372 ns
+        t15647 (Span4Mux_h4) I -> O: 0.316 ns
+        t15646 (Span4Mux_h4) I -> O: 0.316 ns
+        t15645 (IoSpan4Mux) I -> O: 0.323 ns
+        t15644 (Span4Mux_h4) I -> O: 0.316 ns
+        t15643 (Span4Mux_h4) I -> O: 0.316 ns
+        t15697 (Span4Mux_v4) I -> O: 0.372 ns
+        t15696 (Span4Mux_h4) I -> O: 0.316 ns
+        t15695 (Span4Mux_h4) I -> O: 0.316 ns
+        t15694 (Span4Mux_h4) I -> O: 0.316 ns
+        t15693 (Span4Mux_h4) I -> O: 0.316 ns
+        t15692 (Span4Mux_v4) I -> O: 0.372 ns
+        t15691 (Span4Mux_v4) I -> O: 0.372 ns
+        t15690 (Span4Mux_v4) I -> O: 0.372 ns
+        t15689 (Span4Mux_v4) I -> O: 0.372 ns
+        t15688 (Span4Mux_h4) I -> O: 0.316 ns
+        t15700 (Span4Mux_h4) I -> O: 0.316 ns
+        t15699 (Span4Mux_v4) I -> O: 0.372 ns
+        t15701 (LocalMux) I -> O: 0.330 ns
+        inmux_21_11_86350_86375 (InMux) I -> O: 0.260 ns
+        lc40_21_11_3 (LogicCell40) in3 -> lcout: 0.316 ns
+    14.450 ns net_82206 ($abc$72873$auto$simplemap.cc:127:simplemap_reduce$23317[4]_new_)
+        t33540 (LocalMux) I -> O: 0.330 ns
+        inmux_21_11_86332_86385 (InMux) I -> O: 0.260 ns
+        lc40_21_11_5 (LogicCell40) in1 -> lcout: 0.400 ns
+    15.438 ns net_82208 ($abc$72873$new_n4822_)
+        odrv_21_11_82208_49721 (Odrv12) I -> O: 0.540 ns
+        t33549 (Span12Mux_v12) I -> O: 0.540 ns
+        t33553 (Sp12to4) I -> O: 0.449 ns
+        t33552 (Span4Mux_h4) I -> O: 0.316 ns
+        t33551 (Span4Mux_v4) I -> O: 0.372 ns
+        t33550 (LocalMux) I -> O: 0.330 ns
+        inmux_23_10_94352_94404 (InMux) I -> O: 0.260 ns
+        lc40_23_10_3 (LogicCell40) in1 -> lcout: 0.400 ns
+    18.644 ns net_90237 ($abc$72873$new_n4853_)
+        odrv_23_10_90237_93301 (Odrv12) I -> O: 0.540 ns
+        t36394 (Sp12to4) I -> O: 0.449 ns
+        t36416 (Span4Mux_h4) I -> O: 0.316 ns
+        t36426 (Span4Mux_h4) I -> O: 0.316 ns
+        t36425 (Span4Mux_v4) I -> O: 0.372 ns
+        t36424 (LocalMux) I -> O: 0.330 ns
+        inmux_26_9_105818_105827 (InMux) I -> O: 0.260 ns
+        lc40_26_9_1 (LogicCell40) in1 -> lcout: 0.400 ns
+    21.624 ns net_102144 ($abc$72873$new_n4852_)
+        t39138 (LocalMux) I -> O: 0.330 ns
+        inmux_26_9_105788_105850 (InMux) I -> O: 0.260 ns
+        lc40_26_9_5 (LogicCell40) in0 -> lcout: 0.449 ns
+    22.662 ns net_102148 ($abc$72873$techmap\soc.$logic_not$picosoc.v:189$1218_Y_new_)
+        odrv_26_9_102148_102284 (Odrv12) I -> O: 0.540 ns
+        t39143 (Span12Mux_v12) I -> O: 0.540 ns
+        t39142 (Span12Mux_h12) I -> O: 0.540 ns
+        t39147 (Sp12to4) I -> O: 0.449 ns
+        t39146 (Span4Mux_v4) I -> O: 0.372 ns
+        t39145 (Span4Mux_h4) I -> O: 0.316 ns
+        t39144 (LocalMux) I -> O: 0.330 ns
+        inmux_23_25_96221_96257 (InMux) I -> O: 0.260 ns
+        lc40_23_25_4 (LogicCell40) in3 -> lcout: 0.316 ns
+    26.323 ns net_92083 (soc.cpu.mem_xfer)
+        odrv_23_25_92083_92230 (Odrv4) I -> O: 0.372 ns
+        t37147 (Span4Mux_h4) I -> O: 0.316 ns
+        t37155 (Span4Mux_h4) I -> O: 0.316 ns
+        t37154 (Span4Mux_v4) I -> O: 0.372 ns
+        t37153 (Span4Mux_v4) I -> O: 0.372 ns
+        t37152 (LocalMux) I -> O: 0.330 ns
+        inmux_18_22_75444_75489 (InMux) I -> O: 0.260 ns
+        lc40_18_22_2 (LogicCell40) in1 -> lcout: 0.400 ns
+    29.059 ns net_71328 ($abc$72873$new_n4896_)
+        odrv_18_22_71328_75312 (Odrv4) I -> O: 0.372 ns
+        t30290 (Span4Mux_h4) I -> O: 0.316 ns
+        t30289 (LocalMux) I -> O: 0.330 ns
+        inmux_18_23_75594_75602 (InMux) I -> O: 0.260 ns
+        lc40_18_23_0 (LogicCell40) in3 -> lcout: 0.316 ns
+    30.651 ns net_71449 ($abc$72873$auto$simplemap.cc:309:simplemap_lut$14778[1])
+        odrv_18_23_71449_75167 (Odrv12) I -> O: 0.540 ns
+        t30311 (Span12Mux_h12) I -> O: 0.540 ns
+        t30315 (Span12Mux_v12) I -> O: 0.540 ns
+        t30314 (Sp12to4) I -> O: 0.449 ns
+        t30323 (Span4Mux_h4) I -> O: 0.316 ns
+        t30322 (Span4Mux_h4) I -> O: 0.316 ns
+        t30343 (Span4Mux_v4) I -> O: 0.372 ns
+        t30342 (LocalMux) I -> O: 0.330 ns
+        inmux_22_26_92274_92297 (InMux) I -> O: 0.260 ns
+        lc40_22_26_3 (LogicCell40) in3 -> lcout: 0.316 ns
+    34.627 ns net_88128 ($abc$72873$techmap\soc.cpu.$logic_or$picorv32.v:360$2021_Y_new_inv_)
+        t35592 (LocalMux) I -> O: 0.330 ns
+        inmux_22_26_92254_92309 (InMux) I -> O: 0.260 ns
+        lc40_22_26_5 (LogicCell40) in3 -> lcout: 0.316 ns
+    35.532 ns net_88130 ($abc$72873$auto$simplemap.cc:250:simplemap_eqne$13110[5]_new_inv_)
+        odrv_22_26_88130_92339 (Odrv4) I -> O: 0.372 ns
+        t35673 (Span4Mux_v4) I -> O: 0.372 ns
+        t35672 (Span4Mux_h4) I -> O: 0.316 ns
+        t35671 (Span4Mux_v4) I -> O: 0.372 ns
+        t35670 (Span4Mux_v4) I -> O: 0.372 ns
+        t35669 (Span4Mux_h4) I -> O: 0.316 ns
+        t35668 (Span4Mux_v4) I -> O: 0.372 ns
+        t35679 (Span4Mux_v4) I -> O: 0.372 ns
+        t35680 (LocalMux) I -> O: 0.330 ns
+        inmux_14_19_58793_58815 (InMux) I -> O: 0.260 ns
+        t2918 (CascadeMux) I -> O: 0.000 ns
+        lc40_14_19_2 (LogicCell40) in2 -> lcout: 0.379 ns
+    39.361 ns net_54652 ($abc$72873$techmap\soc.cpu.$3\set_mem_do_rdata[0:0]_new_)
+        odrv_14_19_54652_58615 (Odrv12) I -> O: 0.540 ns
+        t24407 (Sp12to4) I -> O: 0.449 ns
+        t24406 (LocalMux) I -> O: 0.330 ns
+        inmux_14_18_58660_58687 (InMux) I -> O: 0.260 ns
+        lc40_14_18_1 (LogicCell40) in3 -> lcout: 0.316 ns
+    41.255 ns net_54528 ($abc$72873$techmap\soc.cpu.$2\set_mem_do_rdata[0:0])
+        t24281 (LocalMux) I -> O: 0.330 ns
+        inmux_13_19_54700_54755 (InMux) I -> O: 0.260 ns
+        lc40_13_19_5 (LogicCell40) in1 -> lcout: 0.400 ns
+    42.244 ns net_50578 ($abc$72873$new_n5454_)
+        odrv_13_19_50578_53922 (Odrv12) I -> O: 0.540 ns
+        t22594 (Span12Mux_v12) I -> O: 0.540 ns
+        t22593 (Sp12to4) I -> O: 0.449 ns
+        t22592 (Span4Mux_h4) I -> O: 0.316 ns
+        t22591 (Span4Mux_h4) I -> O: 0.316 ns
+        t22600 (Span4Mux_h4) I -> O: 0.316 ns
+        t22599 (Span4Mux_v4) I -> O: 0.372 ns
+        t22598 (LocalMux) I -> O: 0.330 ns
+        inmux_4_24_19310_19320 (InMux) I -> O: 0.260 ns
+        lc40_4_24_0 (LogicCell40) in1 -> lcout: 0.400 ns
+    46.080 ns net_15168 ($abc$72873$new_n5540_)
+        odrv_4_24_15168_18887 (Odrv12) I -> O: 0.540 ns
+        t10705 (Span12Mux_h12) I -> O: 0.540 ns
+        t10704 (Span12Mux_h12) I -> O: 0.540 ns
+        t10703 (Sp12to4) I -> O: 0.449 ns
+        t10702 (Span4Mux_h4) I -> O: 0.316 ns
+        t10701 (Span4Mux_v4) I -> O: 0.372 ns
+        t10700 (Span4Mux_v4) I -> O: 0.372 ns
+        t10699 (LocalMux) I -> O: 0.330 ns
+        inmux_18_27_76087_76134 (InMux) I -> O: 0.260 ns
+    49.798 ns net_76134 ($abc$72873$new_n5540_)
+        lc40_18_27_7 (LogicCell40) in1 [setup]: 0.379 ns
+    50.176 ns net_71948 (soc.cpu.reg_op1[11])
 
 Resolvable net names on path:
-     0.640 ns ..  1.601 ns soc.cpu.mem_addr[25]
-     1.916 ns ..  5.907 ns $abc$64360$auto$alumacc.cc:474:replace_alu$7234.BB[25]
-     6.924 ns ..  7.184 ns $abc$64360$auto$alumacc.cc:491:replace_alu$7247[7]$2
-     7.499 ns ..  9.449 ns $abc$64360$auto$alumacc.cc:491:replace_alu$7247[7]
-     9.765 ns .. 12.900 ns $abc$64360$techmap\soc.$logic_and$picosoc.v:109$1151_Y_new_
-    13.278 ns .. 13.867 ns $abc$64360$new_n4259_
-    14.316 ns .. 16.021 ns $abc$64360$new_n4244_
-    16.399 ns .. 21.435 ns soc.cpu.mem_xfer
-    21.884 ns .. 22.473 ns $abc$64360$new_n4629_
-    22.852 ns .. 26.036 ns $abc$64360$soc.cpu.mem_rdata_latched[15]_new_inv_
-    26.485 ns .. 27.817 ns $abc$64360$auto$opt_reduce.cc:132:opt_mux$6940_new_
-    28.266 ns .. 29.844 ns $abc$64360$techmap$techmap\soc.cpu.$procmux$4530.$and$/usr/local/bin/../share/yosys/techmap.v:434$14300_Y_new_
-    30.293 ns .. 31.871 ns $abc$64360$new_n4811_
-    32.187 ns .. 32.776 ns $abc$64360$new_n4808_
-    33.091 ns .. 38.646 ns $abc$64360$techmap8194\soc.cpu.cpuregs.regs.0.0.1.A1ADDR_11[3]
-    39.046 ns .. 39.635 ns $abc$64360$auto$simplemap.cc:127:simplemap_reduce$24185[1]_new_inv_
-    40.035 ns .. 41.199 ns $abc$64360$auto$simplemap.cc:256:simplemap_eqne$24183
-                  lcout -> $abc$64360$auto$memory_bram.cc:945:replace_cell$8056[15]
+     0.640 ns .. 14.134 ns soc.cpu.mem_addr[12]
+    14.450 ns .. 15.039 ns $abc$72873$auto$simplemap.cc:127:simplemap_reduce$23317[4]_new_
+    15.438 ns .. 18.244 ns $abc$72873$new_n4822_
+    18.644 ns .. 21.225 ns $abc$72873$new_n4853_
+    21.624 ns .. 22.213 ns $abc$72873$new_n4852_
+    22.662 ns .. 26.008 ns $abc$72873$techmap\soc.$logic_not$picosoc.v:189$1218_Y_new_
+    26.323 ns .. 28.659 ns soc.cpu.mem_xfer
+    29.059 ns .. 30.335 ns $abc$72873$new_n4896_
+    30.651 ns .. 34.312 ns $abc$72873$auto$simplemap.cc:309:simplemap_lut$14778[1]
+    34.627 ns .. 35.216 ns $abc$72873$techmap\soc.cpu.$logic_or$picorv32.v:360$2021_Y_new_inv_
+    35.532 ns .. 38.983 ns $abc$72873$auto$simplemap.cc:250:simplemap_eqne$13110[5]_new_inv_
+    39.361 ns .. 40.939 ns $abc$72873$techmap\soc.cpu.$3\set_mem_do_rdata[0:0]_new_
+    41.255 ns .. 41.844 ns $abc$72873$techmap\soc.cpu.$2\set_mem_do_rdata[0:0]
+    42.244 ns .. 45.681 ns $abc$72873$new_n5454_
+    46.080 ns .. 49.798 ns $abc$72873$new_n5540_
+                  lcout -> soc.cpu.reg_op1[11]
 
-Total number of logic levels: 23
-Total path delay: 41.34 ns (24.19 MHz)
+Total number of logic levels: 15
+Total path delay: 50.18 ns (19.93 MHz)
 

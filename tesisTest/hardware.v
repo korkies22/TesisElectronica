@@ -35,10 +35,13 @@ module hardware (
     output pinPwmDerF,
     output pinPwmDerB,
 
+    output pin_7,
+
     // encoders
     input pinEncoderIF,
     input pinEncoderIB,
     input pinEncoderDF,
+    
     input pinEncoderDB,
 
     // onboard SPI flash interface
@@ -108,8 +111,11 @@ module hardware (
     reg [31:0] pwm_connectorDF=0;
     reg [31:0] pwm_connectorDB=0;
 
-    reg writeEncoderL=0;
-    reg writeEncoderR=0;
+    reg[31:0] pinTest=0;
+    assign pin_7=pinTest[0];
+
+    reg writeEncoderI=0;
+    reg writeEncoderD=0;
     wire [31:0] encoderValueI;
     wire [31:0] encoderValueD;
     reg [31:0] encoderDataI=0;
@@ -117,16 +123,16 @@ module hardware (
     
 
     //assign user_led = gpio[0];
-    assign user_led = !pwm_out;
-    assign pin_20 = pwm_out;
+    //assign user_led = !pwm_out;
+    //assign pin_20 = pwm_out;
 
     always @(posedge clk) begin
         if (!resetn) begin
             gpio <= 0;
         end else begin
             iomem_ready <= 0;
-            writeEncoderL <=0; 
-            writeEncoderR <=0; 
+            writeEncoderI <=0; 
+            writeEncoderD <=0; 
 
             ///////////////////////////
             // GPIO Peripheral
@@ -143,7 +149,7 @@ module hardware (
             if (iomem_valid && !iomem_ready && iomem_addr[31:8] == 24'h030003) begin
                 iomem_ready <= 1;
                 iomem_rdata <= encoderValueI;
-                writeEncoderI<= iomem_wstrb!=0
+                writeEncoderI<= iomem_wstrb!=0;
                 if (iomem_wstrb[0]) encoderDataI[ 7: 0] <= iomem_wdata[ 7: 0];
                 if (iomem_wstrb[1]) encoderDataI[15: 8] <= iomem_wdata[15: 8];
                 if (iomem_wstrb[2]) encoderDataI[23:16] <= iomem_wdata[23:16];
@@ -153,7 +159,7 @@ module hardware (
             if (iomem_valid && !iomem_ready && iomem_addr[31:8] == 24'h030004) begin
                 iomem_ready <= 1;
                 iomem_rdata <= encoderValueD;
-                writeEncoderD<= iomem_wstrb!=0
+                writeEncoderD<= iomem_wstrb!=0;
                 if (iomem_wstrb[0]) encoderDataD[ 7: 0] <= iomem_wdata[ 7: 0];
                 if (iomem_wstrb[1]) encoderDataD[15: 8] <= iomem_wdata[15: 8];
                 if (iomem_wstrb[2]) encoderDataD[23:16] <= iomem_wdata[23:16];
@@ -192,6 +198,14 @@ module hardware (
                 if (iomem_wstrb[3]) pwm_connectorDB[31:24] <= iomem_wdata[31:24];
             end
 
+            if (iomem_valid && !iomem_ready && iomem_addr[31:8] == 24'h030009) begin
+                iomem_ready <= 1;
+                if (iomem_wstrb[0]) pinTest[ 7: 0] <= iomem_wdata[ 7: 0];
+                if (iomem_wstrb[1]) pinTest[15: 8] <= iomem_wdata[15: 8];
+                if (iomem_wstrb[2]) pinTest[23:16] <= iomem_wdata[23:16];
+                if (iomem_wstrb[3]) pinTest[31:24] <= iomem_wdata[31:24];
+            end
+
             
             ///////////////////////////
             // Template Peripheral
@@ -216,28 +230,28 @@ module hardware (
     pwm pwmIF (
 		.clk         (clk         ),
 		.resetn      (resetn      ),
-        .pwm_in      (pwm_connector      ),
+        .pwm_in      (pwm_connectorIF      ),
 		.pwm_out     (pinPwmIzqF     )
 	);
 
     pwm pwmIB (
 		.clk         (clk         ),
 		.resetn      (resetn      ),
-        .pwm_in      (pwm_connector      ),
+        .pwm_in      (pwm_connectorIB      ),
 		.pwm_out     (pinPwmIzqB    )
 	);
 
     pwm pwmDF (
 		.clk         (clk         ),
 		.resetn      (resetn      ),
-        .pwm_in      (pwm_connector      ),
+        .pwm_in      (pwm_connectorDF      ),
 		.pwm_out     (pinPwmDerF     )
 	);
 
     pwm pwmDB (
 		.clk         (clk         ),
 		.resetn      (resetn      ),
-        .pwm_in      (pwm_connector      ),
+        .pwm_in      (pwm_connectorDB      ),
 		.pwm_out     (pinPwmDerB    )
 	);
 
@@ -245,7 +259,7 @@ module hardware (
 		.clk         (clk         ),
 		.resetn      (resetn      ),
         .writeEncoder      (writeEncoderI      ),
-        .setEncoderData      (encoderDataI      ),
+        .encoderData      (encoderDataI      ),
 		.encoderValue     (encoderValueI     ),
         .pinEncoderF     (pinEncoderIF     ),
         .pinEncoderB     (pinEncoderIB     )
@@ -255,7 +269,7 @@ module hardware (
 		.clk         (clk         ),
 		.resetn      (resetn      ),
         .writeEncoder      (writeEncoderD      ),
-        .setEncoderData      (encoderDataD     ),
+        .encoderData      (encoderDataD     ),
 		.encoderValue     (encoderValueD     ),
         .pinEncoderF     (pinEncoderDF     ),
         .pinEncoderB     (pinEncoderDB     )

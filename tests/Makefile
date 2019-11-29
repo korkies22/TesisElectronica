@@ -14,8 +14,8 @@ hardware.bin: hardware.asc
 	icepack hardware.asc hardware.bin
 
 
-firmware.elf: sections.lds start.S firmware.c 
-	riscv32-unknown-elf-gcc -march=rv32imc -nostartfiles -Wl,-Bstatic,-T,sections.lds,--strip-debug,-Map=firmware.map,--cref  -ffreestanding -o firmware.elf start.S firmware.c -lm 
+firmware.elf: sections.lds start.S serialTest.c 
+	riscv32-unknown-elf-gcc -march=rv32imc -nostartfiles -Wl,-Bstatic,-T,sections.lds,--strip-debug,-Map=firmware.map,--cref  -ffreestanding -o firmware.elf start.S serialTest.c -lm 
 
 firmware.bin: firmware.elf
 	riscv32-unknown-elf-objcopy -O binary firmware.elf /dev/stdout > firmware.bin

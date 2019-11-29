@@ -53,16 +53,16 @@ set_io --warn-no-port pin_12 J1
 set_io --warn-no-port pin_13 H2
 
 # Right side of board
-set_io --warn-no-port pin_14 uart_in
-set_io --warn-no-port pin_15 uart_out
-set_io --warn-no-port pin_16 pinEncoderDB
-set_io --warn-no-port pin_17 pinPwmIzqB
-set_io --warn-no-port pin_18 pinEncoderDF
-set_io --warn-no-port pin_19 pinPwmIzqF
-set_io --warn-no-port pin_20 pinPwmDerF
-set_io --warn-no-port pin_21 pinEncoderIB
-set_io --warn-no-port pin_22 pinEncoderIF
-set_io --warn-no-port pin_23 pinPwmDerB
+set_io --warn-no-port uart_in H9
+set_io --warn-no-port uart_out D9
+set_io --warn-no-port pinEncoderDB D8
+set_io --warn-no-port pinPwmIzqB C9
+set_io --warn-no-port pinEncoderDF A9
+set_io --warn-no-port pinPwmIzqF B8
+set_io --warn-no-port pinPwmDerF A8
+set_io --warn-no-port pinEncoderIB B7
+set_io --warn-no-port pinEncoderIF A7
+set_io --warn-no-port pinPwmDerB B6
 set_io --warn-no-port pin_24 A6
 
 # SPI flash interface on bottom of board

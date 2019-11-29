@@ -14,17 +14,12 @@ module clock (
     assign clock_out = counterO;
 
 	always @(posedge clk) begin
-        if (!resetn) begin
-			counterI <= 0;
-            counterO <= 32'h00000000;
-		end else begin
-			counterI<= counterI+1;
-            if (counterI[4] == 1) begin
-                counterI <= 0;
-                counterO<= counterO+1;
-			end
+		counterI <= counterI + 1;
+		if(counterI == 7)
+		begin
+			counterI<=0;
+			counterO <= counterO+1;
 		end
-		
 	end
 
 

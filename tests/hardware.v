@@ -19,6 +19,7 @@
 
 module hardware (
     input clk_16mhz,
+    input pin_go,
 
     // onboard USB interface
     output pin_pu,
@@ -26,12 +27,12 @@ module hardware (
     output pin_usbn,
 
     // hardware UART
-    output pin_1,
-    input pin_2,
+    output uart_out,
+    input uart_in,
 
-    // onboard LED
-    output user_led,
-    output pin_20,
+    output pin_7,
+    output pin_8,
+
 
     // onboard SPI flash interface
     output flash_csb,
@@ -46,6 +47,8 @@ module hardware (
     assign pin_usbn = 1'b0;
 
     wire clk = clk_16mhz;
+
+    assign pin_8=clock_out[0];
   
 
     ///////////////////////////////////
@@ -94,9 +97,6 @@ module hardware (
     reg [31:0] gpio;
     reg [31:0] leds;
 
-    reg pwm_out;
-    reg [31:0] pwm_connector=0;
-
     reg writeEncoderL=0;
     reg writeEncoderR=0;
     wire [31:0] encoderValueL;
@@ -105,9 +105,8 @@ module hardware (
     reg [31:0] encoderDataR=0;
     
 
-    //assign user_led = gpio[0];
-    assign user_led = !pwm_out;
-    assign pin_20 = pwm_out;
+    reg[31:0] pinTest=0;
+    assign pin_7=pinTest[0];
 
     always @(posedge clk) begin
         if (!resetn) begin
@@ -131,7 +130,7 @@ module hardware (
 
             if (iomem_valid && !iomem_ready && iomem_addr[31:8] == 24'h030001) begin
                 iomem_ready <= 1;
-                iomem_rdata <= leds;
+                iomem_rdata <= pin_go;
                 if (iomem_wstrb[0]) leds[ 7: 0] <= iomem_wdata[ 7: 0];
                 if (iomem_wstrb[1]) leds[15: 8] <= iomem_wdata[15: 8];
                 if (iomem_wstrb[2]) leds[23:16] <= iomem_wdata[23:16];
@@ -148,23 +147,12 @@ module hardware (
                 if (iomem_wstrb[3]) clockO[31:24] <= iomem_wdata[31:24];
             end
 
-            if (iomem_valid && !iomem_ready && iomem_addr[31:8] == 24'h030003) begin
+            if (iomem_valid && !iomem_ready && iomem_addr[31:8] == 24'h030009) begin
                 iomem_ready <= 1;
-                iomem_rdata <= clock_out;
-                if (iomem_wstrb[0]) pwm_connector[ 7: 0] <= iomem_wdata[ 7: 0];
-                if (iomem_wstrb[1]) pwm_connector[15: 8] <= iomem_wdata[15: 8];
-                if (iomem_wstrb[2]) pwm_connector[23:16] <= iomem_wdata[23:16];
-                if (iomem_wstrb[3]) pwm_connector[31:24] <= iomem_wdata[31:24];
-            end
-
-            if (iomem_valid && !iomem_ready && iomem_addr[31:8] == 24'h030004) begin
-                iomem_ready <= 1;
-                iomem_rdata <= encoderValueL;
-                writeEncoderL<= iomem_wstrb!=0
-                if (iomem_wstrb[0]) encoderDataL[ 7: 0] <= iomem_wdata[ 7: 0];
-                if (iomem_wstrb[1]) encoderDataL[15: 8] <= iomem_wdata[15: 8];
-                if (iomem_wstrb[2]) encoderDataL[23:16] <= iomem_wdata[23:16];
-                if (iomem_wstrb[3]) encoderDataL[31:24] <= iomem_wdata[31:24];
+                if (iomem_wstrb[0]) pinTest[ 7: 0] <= iomem_wdata[ 7: 0];
+                if (iomem_wstrb[1]) pinTest[15: 8] <= iomem_wdata[15: 8];
+                if (iomem_wstrb[2]) pinTest[23:16] <= iomem_wdata[23:16];
+                if (iomem_wstrb[3]) pinTest[31:24] <= iomem_wdata[31:24];
             end
 
             
@@ -188,33 +176,6 @@ module hardware (
 		.clock_out   (clock_out)
 	);
 
-    pwm pwm (
-		.clk         (clk         ),
-		.resetn      (resetn      ),
-        .pwm_in      (pwm_connector      ),
-		.pwm_out     (pwm_out     )
-	);
-
-    encoder encoderL (
-		.clk         (clk         ),
-		.resetn      (resetn      ),
-        .writeEncoder      (writeEncoderL      ),
-        .setEncoderData      (encoderDataL      ),
-		.encoderValue     (encoderValueL     ),
-        .pinEncoderF     (pinEncoderLF     ),
-        .pinEncoderB     (pinEncoderLB     )
-	);
-
-    encoder encoderR (
-		.clk         (clk         ),
-		.resetn      (resetn      ),
-        .writeEncoder      (writeEncoderR      ),
-        .setEncoderData      (encoderDataR      ),
-		.encoderValue     (encoderValueR     ),
-        .pinEncoderF     (pinEncoderRF     ),
-        .pinEncoderB     (pinEncoderRB     )
-	);
-
 
     ///////////////////////////////////
     // PicoSOC
@@ -228,8 +189,8 @@ module hardware (
         .clk          (clk         ),
         .resetn       (resetn      ),
 
-        .ser_tx       (pin_1       ),
-        .ser_rx       (pin_2       ),
+        .ser_tx       (uart_out       ),
+        .ser_rx       (uart_in       ),
 
         .flash_csb    (flash_csb   ),
         .flash_clk    (flash_clk   ),
