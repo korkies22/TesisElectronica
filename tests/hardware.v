@@ -154,7 +154,6 @@ module hardware (
                 if (iomem_wstrb[2]) pinTest[23:16] <= iomem_wdata[23:16];
                 if (iomem_wstrb[3]) pinTest[31:24] <= iomem_wdata[31:24];
             end
-
             
             ///////////////////////////
             // Template Peripheral

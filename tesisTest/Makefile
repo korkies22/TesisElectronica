@@ -1,4 +1,3 @@
-
 upload: hardware.bin firmware.bin
 	tinyprog -p hardware.bin -u firmware.bin
 

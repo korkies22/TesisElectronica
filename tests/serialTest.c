@@ -445,9 +445,11 @@ int i=0;
   int arr[200]; 
 void loop(){
     
-	char a=reg_uart_data;
+	int a=1;
     int c=pin_go;
 	if(micros()-clockA>1000000){
+	   a=1-a;
+	   pin_test=a;
        //print("Hola");
        if(c==1){
            print("a");
@@ -477,8 +479,4 @@ void main()
 
     setup();
 
-    while (1)
-    {
-        loop();
-    }
 }

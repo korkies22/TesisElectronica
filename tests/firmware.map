@@ -1,11 +1,11 @@
 Archive member included to satisfy reference by file (symbol)
 
 /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/../../../../riscv32-unknown-elf/lib/libm.a(lib_a-s_cos.o)
-                              /tmp/ccOsdYLI.o (cos)
+                              /tmp/ccI33Tdf.o (cos)
 /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/../../../../riscv32-unknown-elf/lib/libm.a(lib_a-s_sin.o)
-                              /tmp/ccOsdYLI.o (sin)
+                              /tmp/ccI33Tdf.o (sin)
 /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/../../../../riscv32-unknown-elf/lib/libm.a(lib_a-w_pow.o)
-                              /tmp/ccOsdYLI.o (pow)
+                              /tmp/ccI33Tdf.o (pow)
 /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/../../../../riscv32-unknown-elf/lib/libm.a(lib_a-e_pow.o)
                               /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/../../../../riscv32-unknown-elf/lib/libm.a(lib_a-w_pow.o) (__ieee754_pow)
 /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/../../../../riscv32-unknown-elf/lib/libm.a(lib_a-e_rem_pio2.o)
@@ -37,45 +37,45 @@ Archive member included to satisfy reference by file (symbol)
 /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/../../../../riscv32-unknown-elf/lib/libm.a(lib_a-s_copysign.o)
                               /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/../../../../riscv32-unknown-elf/lib/libm.a(lib_a-s_scalbn.o) (copysign)
 /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/libgcc.a(adddf3.o)
-                              /tmp/ccOsdYLI.o (__adddf3)
+                              /tmp/ccI33Tdf.o (__adddf3)
 /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/libgcc.a(divdf3.o)
-                              /tmp/ccOsdYLI.o (__divdf3)
+                              /tmp/ccI33Tdf.o (__divdf3)
 /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/libgcc.a(eqdf2.o)
                               /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/../../../../riscv32-unknown-elf/lib/libm.a(lib_a-w_pow.o) (__eqdf2)
 /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/libgcc.a(gedf2.o)
                               /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/../../../../riscv32-unknown-elf/lib/libm.a(lib_a-e_pow.o) (__gedf2)
 /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/libgcc.a(ledf2.o)
-                              /tmp/ccOsdYLI.o (__ltdf2)
+                              /tmp/ccI33Tdf.o (__ltdf2)
 /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/libgcc.a(muldf3.o)
-                              /tmp/ccOsdYLI.o (__muldf3)
+                              /tmp/ccI33Tdf.o (__muldf3)
 /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/libgcc.a(subdf3.o)
-                              /tmp/ccOsdYLI.o (__subdf3)
+                              /tmp/ccI33Tdf.o (__subdf3)
 /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/libgcc.a(unorddf2.o)
                               /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/../../../../riscv32-unknown-elf/lib/libm.a(lib_a-w_pow.o) (__unorddf2)
 /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/libgcc.a(fixdfsi.o)
                               /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/../../../../riscv32-unknown-elf/lib/libm.a(lib_a-e_rem_pio2.o) (__fixdfsi)
 /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/libgcc.a(floatsidf.o)
-                              /tmp/ccOsdYLI.o (__floatsidf)
+                              /tmp/ccI33Tdf.o (__floatsidf)
 /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/libgcc.a(addsf3.o)
-                              /tmp/ccOsdYLI.o (__addsf3)
+                              /tmp/ccI33Tdf.o (__addsf3)
 /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/libgcc.a(divsf3.o)
-                              /tmp/ccOsdYLI.o (__divsf3)
+                              /tmp/ccI33Tdf.o (__divsf3)
 /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/libgcc.a(lesf2.o)
-                              /tmp/ccOsdYLI.o (__ltsf2)
+                              /tmp/ccI33Tdf.o (__ltsf2)
 /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/libgcc.a(mulsf3.o)
-                              /tmp/ccOsdYLI.o (__mulsf3)
+                              /tmp/ccI33Tdf.o (__mulsf3)
 /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/libgcc.a(subsf3.o)
-                              /tmp/ccOsdYLI.o (__subsf3)
+                              /tmp/ccI33Tdf.o (__subsf3)
 /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/libgcc.a(fixsfsi.o)
-                              /tmp/ccOsdYLI.o (__fixsfsi)
+                              /tmp/ccI33Tdf.o (__fixsfsi)
 /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/libgcc.a(floatsisf.o)
-                              /tmp/ccOsdYLI.o (__floatsisf)
+                              /tmp/ccI33Tdf.o (__floatsisf)
 /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/libgcc.a(floatunsisf.o)
-                              /tmp/ccOsdYLI.o (__floatunsisf)
+                              /tmp/ccI33Tdf.o (__floatunsisf)
 /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/libgcc.a(extendsfdf2.o)
-                              /tmp/ccOsdYLI.o (__extendsfdf2)
+                              /tmp/ccI33Tdf.o (__extendsfdf2)
 /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/libgcc.a(truncdfsf2.o)
-                              /tmp/ccOsdYLI.o (__truncdfsf2)
+                              /tmp/ccI33Tdf.o (__truncdfsf2)
 /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/libgcc.a(muldi3.o)
                               /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/libgcc.a(divdf3.o) (__mulsi3)
 /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/libgcc.a(div.o)
@@ -92,11 +92,11 @@ Archive member included to satisfy reference by file (symbol)
 Allocating common symbols
 Common symbol       size              file
 
-arr                 0x320             /tmp/ccOsdYLI.o
-errorsDerArray      0x28              /tmp/ccOsdYLI.o
-clockA              0x4               /tmp/ccOsdYLI.o
-timeToPrint         0x4               /tmp/ccOsdYLI.o
-errorsIzqArray      0x28              /tmp/ccOsdYLI.o
+arr                 0x320             /tmp/ccI33Tdf.o
+errorsDerArray      0x28              /tmp/ccI33Tdf.o
+clockA              0x4               /tmp/ccI33Tdf.o
+timeToPrint         0x4               /tmp/ccI33Tdf.o
+errorsIzqArray      0x28              /tmp/ccI33Tdf.o
 
 Discarded input sections
 
@@ -318,11 +318,11 @@ RAM              0x0000000000000000 0x0000000000002000 xrw
 Linker script and memory map
 
 
-.text           0x0000000000050000     0x7de0
+.text           0x0000000000050000     0x7df8
                 0x0000000000050000                . = ALIGN (0x4)
  *(.text)
- .text          0x0000000000050000      0x16c /tmp/ccUFfDxA.o
- .text          0x000000000005016c      0xc7a /tmp/ccOsdYLI.o
+ .text          0x0000000000050000      0x16c /tmp/ccyxSRcf.o
+ .text          0x000000000005016c      0xc96 /tmp/ccI33Tdf.o
                 0x000000000005016c                set_irq_mask
                 0x0000000000050172                putchar
                 0x00000000000501a4                print
@@ -340,156 +340,156 @@ Linker script and memory map
                 0x0000000000050cd2                analogWrite
                 0x0000000000050cf2                setup
                 0x0000000000050d0e                loop
-                0x0000000000050d80                main
- *fill*         0x0000000000050de6        0x2 
- .text          0x0000000000050de8       0xac /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/../../../../riscv32-unknown-elf/lib/libm.a(lib_a-s_cos.o)
-                0x0000000000050de8                cos
- .text          0x0000000000050e94       0xb4 /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/../../../../riscv32-unknown-elf/lib/libm.a(lib_a-s_sin.o)
-                0x0000000000050e94                sin
- .text          0x0000000000050f48      0x474 /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/../../../../riscv32-unknown-elf/lib/libm.a(lib_a-w_pow.o)
-                0x0000000000050f48                pow
- .text          0x00000000000513bc      0xeb4 /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/../../../../riscv32-unknown-elf/lib/libm.a(lib_a-e_pow.o)
-                0x00000000000513bc                __ieee754_pow
- .text          0x0000000000052270      0x614 /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/../../../../riscv32-unknown-elf/lib/libm.a(lib_a-e_rem_pio2.o)
-                0x0000000000052270                __ieee754_rem_pio2
- .text          0x0000000000052884      0x234 /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/../../../../riscv32-unknown-elf/lib/libm.a(lib_a-e_sqrt.o)
-                0x0000000000052884                __ieee754_sqrt
- .text          0x0000000000052ab8      0x268 /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/../../../../riscv32-unknown-elf/lib/libm.a(lib_a-k_cos.o)
-                0x0000000000052ab8                __kernel_cos
- .text          0x0000000000052d20      0xaf8 /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/../../../../riscv32-unknown-elf/lib/libm.a(lib_a-k_rem_pio2.o)
-                0x0000000000052d20                __kernel_rem_pio2
- .text          0x0000000000053818      0x264 /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/../../../../riscv32-unknown-elf/lib/libm.a(lib_a-k_sin.o)
-                0x0000000000053818                __kernel_sin
- .text          0x0000000000053a7c       0x18 /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/../../../../riscv32-unknown-elf/lib/libm.a(lib_a-s_fabs.o)
-                0x0000000000053a7c                fabs
- .text          0x0000000000053a94       0x18 /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/../../../../riscv32-unknown-elf/lib/libm.a(lib_a-s_finite.o)
-                0x0000000000053a94                finite
- .text          0x0000000000053aac      0x1b0 /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/../../../../riscv32-unknown-elf/lib/libm.a(lib_a-s_floor.o)
-                0x0000000000053aac                floor
- .text          0x0000000000053c5c        0x0 /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/../../../../riscv32-unknown-elf/lib/libm.a(lib_a-s_lib_ver.o)
- .text          0x0000000000053c5c        0x8 /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/../../../../riscv32-unknown-elf/lib/libm.a(lib_a-s_matherr.o)
-                0x0000000000053c5c                matherr
- .text          0x0000000000053c64       0x10 /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/../../../../riscv32-unknown-elf/lib/libm.a(lib_a-s_nan.o)
-                0x0000000000053c64                nan
- .text          0x0000000000053c74      0x1fc /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/../../../../riscv32-unknown-elf/lib/libm.a(lib_a-s_rint.o)
-                0x0000000000053c74                rint
- .text          0x0000000000053e70      0x168 /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/../../../../riscv32-unknown-elf/lib/libm.a(lib_a-s_scalbn.o)
-                0x0000000000053e70                scalbn
- .text          0x0000000000053fd8       0x24 /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/../../../../riscv32-unknown-elf/lib/libm.a(lib_a-s_copysign.o)
-                0x0000000000053fd8                copysign
- .text          0x0000000000053ffc      0x7c0 /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/libgcc.a(adddf3.o)
-                0x0000000000053ffc                __adddf3
- .text          0x00000000000547bc      0x7d0 /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/libgcc.a(divdf3.o)
-                0x00000000000547bc                __divdf3
- .text          0x0000000000054f8c       0x8c /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/libgcc.a(eqdf2.o)
-                0x0000000000054f8c                __eqdf2
-                0x0000000000054f8c                __nedf2
- .text          0x0000000000055018       0xe8 /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/libgcc.a(gedf2.o)
-                0x0000000000055018                __gtdf2
-                0x0000000000055018                __gedf2
- .text          0x0000000000055100       0xe8 /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/libgcc.a(ledf2.o)
-                0x0000000000055100                __ltdf2
-                0x0000000000055100                __ledf2
- .text          0x00000000000551e8      0x674 /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/libgcc.a(muldf3.o)
-                0x00000000000551e8                __muldf3
- .text          0x000000000005585c      0x7c4 /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/libgcc.a(subdf3.o)
-                0x000000000005585c                __subdf3
- .text          0x0000000000056020       0x4c /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/libgcc.a(unorddf2.o)
-                0x0000000000056020                __unorddf2
- .text          0x000000000005606c       0x80 /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/libgcc.a(fixdfsi.o)
-                0x000000000005606c                __fixdfsi
- .text          0x00000000000560ec       0xac /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/libgcc.a(floatsidf.o)
-                0x00000000000560ec                __floatsidf
- .text          0x0000000000056198      0x42c /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/libgcc.a(addsf3.o)
-                0x0000000000056198                __addsf3
- .text          0x00000000000565c4      0x384 /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/libgcc.a(divsf3.o)
-                0x00000000000565c4                __divsf3
- .text          0x0000000000056948       0xbc /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/libgcc.a(lesf2.o)
-                0x0000000000056948                __lesf2
-                0x0000000000056948                __ltsf2
- .text          0x0000000000056a04      0x320 /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/libgcc.a(mulsf3.o)
-                0x0000000000056a04                __mulsf3
- .text          0x0000000000056d24      0x44c /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/libgcc.a(subsf3.o)
-                0x0000000000056d24                __subsf3
- .text          0x0000000000057170       0x70 /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/libgcc.a(fixsfsi.o)
-                0x0000000000057170                __fixsfsi
- .text          0x00000000000571e0      0x108 /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/libgcc.a(floatsisf.o)
-                0x00000000000571e0                __floatsisf
- .text          0x00000000000572e8       0xdc /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/libgcc.a(floatunsisf.o)
-                0x00000000000572e8                __floatunsisf
- .text          0x00000000000573c4       0xdc /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/libgcc.a(extendsfdf2.o)
-                0x00000000000573c4                __extendsfdf2
- .text          0x00000000000574a0      0x180 /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/libgcc.a(truncdfsf2.o)
-                0x00000000000574a0                __truncdfsf2
- .text          0x0000000000057620       0x24 /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/libgcc.a(muldi3.o)
-                0x0000000000057620                __mulsi3
- .text          0x0000000000057644       0xb4 /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/libgcc.a(div.o)
-                0x0000000000057644                __divsi3
-                0x000000000005764c                __udivsi3
-                0x0000000000057694                __umodsi3
-                0x00000000000576c8                __modsi3
- .text          0x00000000000576f8       0x4c /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/libgcc.a(_clzsi2.o)
-                0x00000000000576f8                __clzsi2
- .text          0x0000000000057744        0x0 /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/libgcc.a(_clz.o)
- .text          0x0000000000057744        0x8 /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/../../../../riscv32-unknown-elf/lib/libc.a(lib_a-errno.o)
-                0x0000000000057744                __errno
- .text          0x000000000005774c        0x0 /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/../../../../riscv32-unknown-elf/lib/libc.a(lib_a-impure.o)
+                0x0000000000050d96                main
+ *fill*         0x0000000000050e02        0x2 
+ .text          0x0000000000050e04       0xac /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/../../../../riscv32-unknown-elf/lib/libm.a(lib_a-s_cos.o)
+                0x0000000000050e04                cos
+ .text          0x0000000000050eb0       0xb4 /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/../../../../riscv32-unknown-elf/lib/libm.a(lib_a-s_sin.o)
+                0x0000000000050eb0                sin
+ .text          0x0000000000050f64      0x474 /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/../../../../riscv32-unknown-elf/lib/libm.a(lib_a-w_pow.o)
+                0x0000000000050f64                pow
+ .text          0x00000000000513d8      0xeb4 /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/../../../../riscv32-unknown-elf/lib/libm.a(lib_a-e_pow.o)
+                0x00000000000513d8                __ieee754_pow
+ .text          0x000000000005228c      0x614 /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/../../../../riscv32-unknown-elf/lib/libm.a(lib_a-e_rem_pio2.o)
+                0x000000000005228c                __ieee754_rem_pio2
+ .text          0x00000000000528a0      0x234 /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/../../../../riscv32-unknown-elf/lib/libm.a(lib_a-e_sqrt.o)
+                0x00000000000528a0                __ieee754_sqrt
+ .text          0x0000000000052ad4      0x268 /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/../../../../riscv32-unknown-elf/lib/libm.a(lib_a-k_cos.o)
+                0x0000000000052ad4                __kernel_cos
+ .text          0x0000000000052d3c      0xaf8 /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/../../../../riscv32-unknown-elf/lib/libm.a(lib_a-k_rem_pio2.o)
+                0x0000000000052d3c                __kernel_rem_pio2
+ .text          0x0000000000053834      0x264 /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/../../../../riscv32-unknown-elf/lib/libm.a(lib_a-k_sin.o)
+                0x0000000000053834                __kernel_sin
+ .text          0x0000000000053a98       0x18 /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/../../../../riscv32-unknown-elf/lib/libm.a(lib_a-s_fabs.o)
+                0x0000000000053a98                fabs
+ .text          0x0000000000053ab0       0x18 /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/../../../../riscv32-unknown-elf/lib/libm.a(lib_a-s_finite.o)
+                0x0000000000053ab0                finite
+ .text          0x0000000000053ac8      0x1b0 /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/../../../../riscv32-unknown-elf/lib/libm.a(lib_a-s_floor.o)
+                0x0000000000053ac8                floor
+ .text          0x0000000000053c78        0x0 /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/../../../../riscv32-unknown-elf/lib/libm.a(lib_a-s_lib_ver.o)
+ .text          0x0000000000053c78        0x8 /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/../../../../riscv32-unknown-elf/lib/libm.a(lib_a-s_matherr.o)
+                0x0000000000053c78                matherr
+ .text          0x0000000000053c80       0x10 /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/../../../../riscv32-unknown-elf/lib/libm.a(lib_a-s_nan.o)
+                0x0000000000053c80                nan
+ .text          0x0000000000053c90      0x1fc /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/../../../../riscv32-unknown-elf/lib/libm.a(lib_a-s_rint.o)
+                0x0000000000053c90                rint
+ .text          0x0000000000053e8c      0x168 /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/../../../../riscv32-unknown-elf/lib/libm.a(lib_a-s_scalbn.o)
+                0x0000000000053e8c                scalbn
+ .text          0x0000000000053ff4       0x24 /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/../../../../riscv32-unknown-elf/lib/libm.a(lib_a-s_copysign.o)
+                0x0000000000053ff4                copysign
+ .text          0x0000000000054018      0x7c0 /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/libgcc.a(adddf3.o)
+                0x0000000000054018                __adddf3
+ .text          0x00000000000547d8      0x7d0 /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/libgcc.a(divdf3.o)
+                0x00000000000547d8                __divdf3
+ .text          0x0000000000054fa8       0x8c /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/libgcc.a(eqdf2.o)
+                0x0000000000054fa8                __eqdf2
+                0x0000000000054fa8                __nedf2
+ .text          0x0000000000055034       0xe8 /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/libgcc.a(gedf2.o)
+                0x0000000000055034                __gtdf2
+                0x0000000000055034                __gedf2
+ .text          0x000000000005511c       0xe8 /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/libgcc.a(ledf2.o)
+                0x000000000005511c                __ltdf2
+                0x000000000005511c                __ledf2
+ .text          0x0000000000055204      0x674 /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/libgcc.a(muldf3.o)
+                0x0000000000055204                __muldf3
+ .text          0x0000000000055878      0x7c4 /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/libgcc.a(subdf3.o)
+                0x0000000000055878                __subdf3
+ .text          0x000000000005603c       0x4c /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/libgcc.a(unorddf2.o)
+                0x000000000005603c                __unorddf2
+ .text          0x0000000000056088       0x80 /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/libgcc.a(fixdfsi.o)
+                0x0000000000056088                __fixdfsi
+ .text          0x0000000000056108       0xac /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/libgcc.a(floatsidf.o)
+                0x0000000000056108                __floatsidf
+ .text          0x00000000000561b4      0x42c /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/libgcc.a(addsf3.o)
+                0x00000000000561b4                __addsf3
+ .text          0x00000000000565e0      0x384 /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/libgcc.a(divsf3.o)
+                0x00000000000565e0                __divsf3
+ .text          0x0000000000056964       0xbc /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/libgcc.a(lesf2.o)
+                0x0000000000056964                __lesf2
+                0x0000000000056964                __ltsf2
+ .text          0x0000000000056a20      0x320 /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/libgcc.a(mulsf3.o)
+                0x0000000000056a20                __mulsf3
+ .text          0x0000000000056d40      0x44c /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/libgcc.a(subsf3.o)
+                0x0000000000056d40                __subsf3
+ .text          0x000000000005718c       0x70 /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/libgcc.a(fixsfsi.o)
+                0x000000000005718c                __fixsfsi
+ .text          0x00000000000571fc      0x108 /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/libgcc.a(floatsisf.o)
+                0x00000000000571fc                __floatsisf
+ .text          0x0000000000057304       0xdc /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/libgcc.a(floatunsisf.o)
+                0x0000000000057304                __floatunsisf
+ .text          0x00000000000573e0       0xdc /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/libgcc.a(extendsfdf2.o)
+                0x00000000000573e0                __extendsfdf2
+ .text          0x00000000000574bc      0x180 /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/libgcc.a(truncdfsf2.o)
+                0x00000000000574bc                __truncdfsf2
+ .text          0x000000000005763c       0x24 /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/libgcc.a(muldi3.o)
+                0x000000000005763c                __mulsi3
+ .text          0x0000000000057660       0xb4 /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/libgcc.a(div.o)
+                0x0000000000057660                __divsi3
+                0x0000000000057668                __udivsi3
+                0x00000000000576b0                __umodsi3
+                0x00000000000576e4                __modsi3
+ .text          0x0000000000057714       0x4c /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/libgcc.a(_clzsi2.o)
+                0x0000000000057714                __clzsi2
+ .text          0x0000000000057760        0x0 /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/libgcc.a(_clz.o)
+ .text          0x0000000000057760        0x8 /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/../../../../riscv32-unknown-elf/lib/libc.a(lib_a-errno.o)
+                0x0000000000057760                __errno
+ .text          0x0000000000057768        0x0 /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/../../../../riscv32-unknown-elf/lib/libc.a(lib_a-impure.o)
  *(.text*)
  *(.rodata)
- *fill*         0x000000000005774c        0x4 
- .rodata        0x0000000000057750       0x88 /tmp/ccOsdYLI.o
- .rodata        0x00000000000577d8       0x30 /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/../../../../riscv32-unknown-elf/lib/libm.a(lib_a-e_pow.o)
- .rodata        0x0000000000057808      0x188 /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/../../../../riscv32-unknown-elf/lib/libm.a(lib_a-e_rem_pio2.o)
- .rodata        0x0000000000057990       0x50 /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/../../../../riscv32-unknown-elf/lib/libm.a(lib_a-k_rem_pio2.o)
- .rodata        0x00000000000579e0       0x10 /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/../../../../riscv32-unknown-elf/lib/libm.a(lib_a-s_rint.o)
- .rodata        0x00000000000579f0       0x3c /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/libgcc.a(divdf3.o)
- .rodata        0x0000000000057a2c       0x3c /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/libgcc.a(muldf3.o)
- .rodata        0x0000000000057a68       0x3c /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/libgcc.a(divsf3.o)
- .rodata        0x0000000000057aa4       0x3c /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/libgcc.a(mulsf3.o)
- .rodata        0x0000000000057ae0      0x100 /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/libgcc.a(_clz.o)
-                0x0000000000057ae0                __clz_tab
+ *fill*         0x0000000000057768        0x0 
+ .rodata        0x0000000000057768       0x88 /tmp/ccI33Tdf.o
+ .rodata        0x00000000000577f0       0x30 /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/../../../../riscv32-unknown-elf/lib/libm.a(lib_a-e_pow.o)
+ .rodata        0x0000000000057820      0x188 /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/../../../../riscv32-unknown-elf/lib/libm.a(lib_a-e_rem_pio2.o)
+ .rodata        0x00000000000579a8       0x50 /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/../../../../riscv32-unknown-elf/lib/libm.a(lib_a-k_rem_pio2.o)
+ .rodata        0x00000000000579f8       0x10 /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/../../../../riscv32-unknown-elf/lib/libm.a(lib_a-s_rint.o)
+ .rodata        0x0000000000057a08       0x3c /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/libgcc.a(divdf3.o)
+ .rodata        0x0000000000057a44       0x3c /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/libgcc.a(muldf3.o)
+ .rodata        0x0000000000057a80       0x3c /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/libgcc.a(divsf3.o)
+ .rodata        0x0000000000057abc       0x3c /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/libgcc.a(mulsf3.o)
+ .rodata        0x0000000000057af8      0x100 /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/libgcc.a(_clz.o)
+                0x0000000000057af8                __clz_tab
  *(.rodata*)
  .rodata.str1.4
-                0x0000000000057be0        0x4 /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/../../../../riscv32-unknown-elf/lib/libm.a(lib_a-w_pow.o)
+                0x0000000000057bf8        0x4 /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/../../../../riscv32-unknown-elf/lib/libm.a(lib_a-w_pow.o)
  .rodata.str1.4
-                0x0000000000057be4        0x4 /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/../../../../riscv32-unknown-elf/lib/libm.a(lib_a-e_pow.o)
+                0x0000000000057bfc        0x4 /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/../../../../riscv32-unknown-elf/lib/libm.a(lib_a-e_pow.o)
                                           0x1 (size before relaxing)
  *(.srodata)
- .srodata       0x0000000000057be8        0x4 /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/../../../../riscv32-unknown-elf/lib/libc.a(lib_a-impure.o)
-                0x0000000000057be8                _global_impure_ptr
+ .srodata       0x0000000000057c00        0x4 /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/../../../../riscv32-unknown-elf/lib/libc.a(lib_a-impure.o)
+                0x0000000000057c00                _global_impure_ptr
  *(.srodata*)
- *fill*         0x0000000000057bec        0x4 
- .srodata.cst8  0x0000000000057bf0       0x30 /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/../../../../riscv32-unknown-elf/lib/libm.a(lib_a-w_pow.o)
- .srodata.cst8  0x0000000000057c20       0xe8 /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/../../../../riscv32-unknown-elf/lib/libm.a(lib_a-e_pow.o)
+ *fill*         0x0000000000057c04        0x4 
+ .srodata.cst8  0x0000000000057c08       0x30 /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/../../../../riscv32-unknown-elf/lib/libm.a(lib_a-w_pow.o)
+ .srodata.cst8  0x0000000000057c38       0xe8 /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/../../../../riscv32-unknown-elf/lib/libm.a(lib_a-e_pow.o)
                                          0xf8 (size before relaxing)
- .srodata.cst8  0x0000000000057d08       0x40 /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/../../../../riscv32-unknown-elf/lib/libm.a(lib_a-e_rem_pio2.o)
+ .srodata.cst8  0x0000000000057d20       0x40 /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/../../../../riscv32-unknown-elf/lib/libm.a(lib_a-e_rem_pio2.o)
                                          0x48 (size before relaxing)
- .srodata.cst8  0x0000000000057d48       0x38 /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/../../../../riscv32-unknown-elf/lib/libm.a(lib_a-k_cos.o)
+ .srodata.cst8  0x0000000000057d60       0x38 /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/../../../../riscv32-unknown-elf/lib/libm.a(lib_a-k_cos.o)
                                          0x48 (size before relaxing)
- .srodata.cst8  0x0000000000057d80       0x18 /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/../../../../riscv32-unknown-elf/lib/libm.a(lib_a-k_rem_pio2.o)
+ .srodata.cst8  0x0000000000057d98       0x18 /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/../../../../riscv32-unknown-elf/lib/libm.a(lib_a-k_rem_pio2.o)
                                          0x30 (size before relaxing)
- .srodata.cst8  0x0000000000057d98       0x30 /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/../../../../riscv32-unknown-elf/lib/libm.a(lib_a-k_sin.o)
+ .srodata.cst8  0x0000000000057db0       0x30 /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/../../../../riscv32-unknown-elf/lib/libm.a(lib_a-k_sin.o)
                                          0x38 (size before relaxing)
- .srodata.cst8  0x0000000000057dc8        0x8 /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/../../../../riscv32-unknown-elf/lib/libm.a(lib_a-s_floor.o)
- .srodata.cst8  0x0000000000057dc8        0x8 /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/../../../../riscv32-unknown-elf/lib/libm.a(lib_a-s_nan.o)
- .srodata.cst8  0x0000000000057dd0       0x10 /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/../../../../riscv32-unknown-elf/lib/libm.a(lib_a-s_scalbn.o)
+ .srodata.cst8  0x0000000000057de0        0x8 /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/../../../../riscv32-unknown-elf/lib/libm.a(lib_a-s_floor.o)
+ .srodata.cst8  0x0000000000057de0        0x8 /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/../../../../riscv32-unknown-elf/lib/libm.a(lib_a-s_nan.o)
+ .srodata.cst8  0x0000000000057de8       0x10 /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/../../../../riscv32-unknown-elf/lib/libm.a(lib_a-s_scalbn.o)
                                          0x20 (size before relaxing)
  *(.eh_frame)
  *(.eh_frame*)
-                0x0000000000057de0                . = ALIGN (0x4)
-                0x0000000000057de0                _etext = .
-                0x0000000000057de0                _sidata = _etext
+                0x0000000000057df8                . = ALIGN (0x4)
+                0x0000000000057df8                _etext = .
+                0x0000000000057df8                _sidata = _etext
 
-.rela.dyn       0x0000000000057de0        0x0
- .rela.text     0x0000000000057de0        0x0 /tmp/ccUFfDxA.o
+.rela.dyn       0x0000000000057df8        0x0
+ .rela.text     0x0000000000057df8        0x0 /tmp/ccyxSRcf.o
 
-.data           0x0000000000000000      0x488 load address 0x0000000000057de0
+.data           0x0000000000000000      0x488 load address 0x0000000000057df8
                 0x0000000000000000                . = ALIGN (0x4)
                 0x0000000000000000                _sdata = .
                 0x0000000000000000                _ram_start = .
  *(.data)
- .data          0x0000000000000000       0x14 /tmp/ccUFfDxA.o
- .data          0x0000000000000014        0x0 /tmp/ccOsdYLI.o
+ .data          0x0000000000000000       0x14 /tmp/ccyxSRcf.o
+ .data          0x0000000000000014        0x0 /tmp/ccI33Tdf.o
  .data          0x0000000000000014        0x0 /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/../../../../riscv32-unknown-elf/lib/libm.a(lib_a-s_cos.o)
  .data          0x0000000000000014        0x0 /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/../../../../riscv32-unknown-elf/lib/libm.a(lib_a-s_sin.o)
  .data          0x0000000000000014        0x0 /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/../../../../riscv32-unknown-elf/lib/libm.a(lib_a-w_pow.o)
@@ -537,7 +537,7 @@ Linker script and memory map
  .data          0x0000000000000018      0x428 /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/../../../../riscv32-unknown-elf/lib/libc.a(lib_a-impure.o)
  *(.data*)
  *(.sdata)
- .sdata         0x0000000000000440       0x40 /tmp/ccOsdYLI.o
+ .sdata         0x0000000000000440       0x40 /tmp/ccI33Tdf.o
                 0x0000000000000440                pinLedMoving
                 0x0000000000000444                pinLedFinishing
                 0x0000000000000448                pinLedFinished
@@ -564,12 +564,12 @@ Linker script and memory map
                 0x0000000000000488                . = ALIGN (0x4)
                 0x0000000000000488                _edata = .
 
-.bss            0x0000000000000488      0x404 load address 0x0000000000058268
+.bss            0x0000000000000488      0x404 load address 0x0000000000058280
                 0x0000000000000488                . = ALIGN (0x4)
                 0x0000000000000488                _sbss = .
  *(.bss)
- .bss           0x0000000000000488        0x0 /tmp/ccUFfDxA.o
- .bss           0x0000000000000488        0x0 /tmp/ccOsdYLI.o
+ .bss           0x0000000000000488        0x0 /tmp/ccyxSRcf.o
+ .bss           0x0000000000000488        0x0 /tmp/ccI33Tdf.o
  .bss           0x0000000000000488        0x0 /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/../../../../riscv32-unknown-elf/lib/libm.a(lib_a-s_cos.o)
  .bss           0x0000000000000488        0x0 /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/../../../../riscv32-unknown-elf/lib/libm.a(lib_a-s_sin.o)
  .bss           0x0000000000000488        0x0 /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/../../../../riscv32-unknown-elf/lib/libm.a(lib_a-w_pow.o)
@@ -616,7 +616,7 @@ Linker script and memory map
  .bss           0x0000000000000488        0x0 /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/../../../../riscv32-unknown-elf/lib/libc.a(lib_a-impure.o)
  *(.bss*)
  *(.sbss)
- .sbss          0x0000000000000488       0x8c /tmp/ccOsdYLI.o
+ .sbss          0x0000000000000488       0x8c /tmp/ccI33Tdf.o
                 0x0000000000000488                finish
                 0x0000000000000489                countingTimeToEnd
                 0x000000000000048c                timeToEnd
@@ -655,7 +655,7 @@ Linker script and memory map
                 0x0000000000000510                j
  *(.sbss*)
  *(COMMON)
- COMMON         0x0000000000000514      0x378 /tmp/ccOsdYLI.o
+ COMMON         0x0000000000000514      0x378 /tmp/ccI33Tdf.o
                 0x0000000000000514                arr
                 0x0000000000000834                errorsDerArray
                 0x000000000000085c                clockA
@@ -667,8 +667,8 @@ Linker script and memory map
 .heap           0x000000000000088c        0x0
                 0x000000000000088c                . = ALIGN (0x4)
                 0x000000000000088c                _heap_start = .
-LOAD /tmp/ccUFfDxA.o
-LOAD /tmp/ccOsdYLI.o
+LOAD /tmp/ccyxSRcf.o
+LOAD /tmp/ccI33Tdf.o
 LOAD /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/../../../../riscv32-unknown-elf/lib/libm.a
 LOAD /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/libgcc.a
 START GROUP
@@ -679,7 +679,7 @@ LOAD /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/libgcc.a
 OUTPUT(firmware.elf elf32-littleriscv)
 
 .comment        0x0000000000000000       0x11
- .comment       0x0000000000000000       0x11 /tmp/ccOsdYLI.o
+ .comment       0x0000000000000000       0x11 /tmp/ccI33Tdf.o
                                          0x12 (size before relaxing)
  .comment       0x0000000000000011       0x12 /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/../../../../riscv32-unknown-elf/lib/libm.a(lib_a-s_cos.o)
  .comment       0x0000000000000011       0x12 /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/../../../../riscv32-unknown-elf/lib/libm.a(lib_a-s_sin.o)
@@ -737,9 +737,9 @@ __adddf3                                          /opt/riscv32i/lib/gcc/riscv32-
                                                   /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/../../../../riscv32-unknown-elf/lib/libm.a(lib_a-e_sqrt.o)
                                                   /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/../../../../riscv32-unknown-elf/lib/libm.a(lib_a-e_rem_pio2.o)
                                                   /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/../../../../riscv32-unknown-elf/lib/libm.a(lib_a-e_pow.o)
-                                                  /tmp/ccOsdYLI.o
+                                                  /tmp/ccI33Tdf.o
 __addsf3                                          /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/libgcc.a(addsf3.o)
-                                                  /tmp/ccOsdYLI.o
+                                                  /tmp/ccI33Tdf.o
 __clz_tab                                         /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/libgcc.a(_clz.o)
                                                   /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/libgcc.a(_clzsi2.o)
 __clzsi2                                          /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/libgcc.a(_clzsi2.o)
@@ -759,9 +759,9 @@ __divdf3                                          /opt/riscv32i/lib/gcc/riscv32-
                                                   /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/../../../../riscv32-unknown-elf/lib/libm.a(lib_a-e_sqrt.o)
                                                   /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/../../../../riscv32-unknown-elf/lib/libm.a(lib_a-e_pow.o)
                                                   /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/../../../../riscv32-unknown-elf/lib/libm.a(lib_a-w_pow.o)
-                                                  /tmp/ccOsdYLI.o
+                                                  /tmp/ccI33Tdf.o
 __divsf3                                          /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/libgcc.a(divsf3.o)
-                                                  /tmp/ccOsdYLI.o
+                                                  /tmp/ccI33Tdf.o
 __divsi3                                          /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/libgcc.a(div.o)
                                                   /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/../../../../riscv32-unknown-elf/lib/libm.a(lib_a-k_rem_pio2.o)
 __eqdf2                                           /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/libgcc.a(eqdf2.o)
@@ -771,7 +771,7 @@ __eqdf2                                           /opt/riscv32i/lib/gcc/riscv32-
 __errno                                           /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/../../../../riscv32-unknown-elf/lib/libc.a(lib_a-errno.o)
                                                   /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/../../../../riscv32-unknown-elf/lib/libm.a(lib_a-w_pow.o)
 __extendsfdf2                                     /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/libgcc.a(extendsfdf2.o)
-                                                  /tmp/ccOsdYLI.o
+                                                  /tmp/ccI33Tdf.o
 __fdlib_version                                   /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/../../../../riscv32-unknown-elf/lib/libm.a(lib_a-s_lib_ver.o)
                                                   /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/../../../../riscv32-unknown-elf/lib/libm.a(lib_a-w_pow.o)
 __fixdfsi                                         /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/libgcc.a(fixdfsi.o)
@@ -780,23 +780,23 @@ __fixdfsi                                         /opt/riscv32i/lib/gcc/riscv32-
                                                   /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/../../../../riscv32-unknown-elf/lib/libm.a(lib_a-k_cos.o)
                                                   /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/../../../../riscv32-unknown-elf/lib/libm.a(lib_a-e_rem_pio2.o)
 __fixsfsi                                         /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/libgcc.a(fixsfsi.o)
-                                                  /tmp/ccOsdYLI.o
+                                                  /tmp/ccI33Tdf.o
 __floatsidf                                       /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/libgcc.a(floatsidf.o)
                                                   /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/../../../../riscv32-unknown-elf/lib/libm.a(lib_a-k_rem_pio2.o)
                                                   /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/../../../../riscv32-unknown-elf/lib/libm.a(lib_a-e_rem_pio2.o)
                                                   /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/../../../../riscv32-unknown-elf/lib/libm.a(lib_a-e_pow.o)
-                                                  /tmp/ccOsdYLI.o
+                                                  /tmp/ccI33Tdf.o
 __floatsisf                                       /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/libgcc.a(floatsisf.o)
-                                                  /tmp/ccOsdYLI.o
+                                                  /tmp/ccI33Tdf.o
 __floatunsisf                                     /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/libgcc.a(floatunsisf.o)
-                                                  /tmp/ccOsdYLI.o
+                                                  /tmp/ccI33Tdf.o
 __gedf2                                           /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/libgcc.a(gedf2.o)
                                                   /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/../../../../riscv32-unknown-elf/lib/libm.a(lib_a-k_rem_pio2.o)
                                                   /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/../../../../riscv32-unknown-elf/lib/libm.a(lib_a-e_pow.o)
 __gtdf2                                           /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/libgcc.a(gedf2.o)
                                                   /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/../../../../riscv32-unknown-elf/lib/libm.a(lib_a-s_floor.o)
                                                   /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/../../../../riscv32-unknown-elf/lib/libm.a(lib_a-e_pow.o)
-                                                  /tmp/ccOsdYLI.o
+                                                  /tmp/ccI33Tdf.o
 __ieee754_pow                                     /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/../../../../riscv32-unknown-elf/lib/libm.a(lib_a-e_pow.o)
                                                   /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/../../../../riscv32-unknown-elf/lib/libm.a(lib_a-w_pow.o)
 __ieee754_rem_pio2                                /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/../../../../riscv32-unknown-elf/lib/libm.a(lib_a-e_rem_pio2.o)
@@ -816,9 +816,9 @@ __ledf2                                           /opt/riscv32i/lib/gcc/riscv32-
 __lesf2                                           /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/libgcc.a(lesf2.o)
 __ltdf2                                           /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/libgcc.a(ledf2.o)
                                                   /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/../../../../riscv32-unknown-elf/lib/libm.a(lib_a-w_pow.o)
-                                                  /tmp/ccOsdYLI.o
+                                                  /tmp/ccI33Tdf.o
 __ltsf2                                           /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/libgcc.a(lesf2.o)
-                                                  /tmp/ccOsdYLI.o
+                                                  /tmp/ccI33Tdf.o
 __modsi3                                          /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/libgcc.a(div.o)
 __muldf3                                          /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/libgcc.a(muldf3.o)
                                                   /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/../../../../riscv32-unknown-elf/lib/libm.a(lib_a-s_scalbn.o)
@@ -829,9 +829,9 @@ __muldf3                                          /opt/riscv32i/lib/gcc/riscv32-
                                                   /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/../../../../riscv32-unknown-elf/lib/libm.a(lib_a-e_rem_pio2.o)
                                                   /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/../../../../riscv32-unknown-elf/lib/libm.a(lib_a-e_pow.o)
                                                   /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/../../../../riscv32-unknown-elf/lib/libm.a(lib_a-w_pow.o)
-                                                  /tmp/ccOsdYLI.o
+                                                  /tmp/ccI33Tdf.o
 __mulsf3                                          /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/libgcc.a(mulsf3.o)
-                                                  /tmp/ccOsdYLI.o
+                                                  /tmp/ccI33Tdf.o
 __mulsi3                                          /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/libgcc.a(muldi3.o)
                                                   /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/libgcc.a(mulsf3.o)
                                                   /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/libgcc.a(divsf3.o)
@@ -849,11 +849,11 @@ __subdf3                                          /opt/riscv32i/lib/gcc/riscv32-
                                                   /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/../../../../riscv32-unknown-elf/lib/libm.a(lib_a-e_pow.o)
                                                   /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/../../../../riscv32-unknown-elf/lib/libm.a(lib_a-s_sin.o)
                                                   /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/../../../../riscv32-unknown-elf/lib/libm.a(lib_a-s_cos.o)
-                                                  /tmp/ccOsdYLI.o
+                                                  /tmp/ccI33Tdf.o
 __subsf3                                          /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/libgcc.a(subsf3.o)
-                                                  /tmp/ccOsdYLI.o
+                                                  /tmp/ccI33Tdf.o
 __truncdfsf2                                      /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/libgcc.a(truncdfsf2.o)
-                                                  /tmp/ccOsdYLI.o
+                                                  /tmp/ccI33Tdf.o
 __udivsi3                                         /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/libgcc.a(div.o)
                                                   /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/libgcc.a(divsf3.o)
                                                   /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/libgcc.a(divdf3.o)
@@ -862,109 +862,109 @@ __umodsi3                                         /opt/riscv32i/lib/gcc/riscv32-
                                                   /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/libgcc.a(divdf3.o)
 __unorddf2                                        /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/libgcc.a(unorddf2.o)
                                                   /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/../../../../riscv32-unknown-elf/lib/libm.a(lib_a-w_pow.o)
-_ebss                                             /tmp/ccOsdYLI.o
+_ebss                                             /tmp/ccI33Tdf.o
 _global_impure_ptr                                /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/../../../../riscv32-unknown-elf/lib/libc.a(lib_a-impure.o)
 _impure_ptr                                       /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/../../../../riscv32-unknown-elf/lib/libc.a(lib_a-impure.o)
                                                   /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/../../../../riscv32-unknown-elf/lib/libc.a(lib_a-errno.o)
-_sbss                                             /tmp/ccOsdYLI.o
-a                                                 /tmp/ccOsdYLI.o
-alpha                                             /tmp/ccOsdYLI.o
-analogWrite                                       /tmp/ccOsdYLI.o
-arr                                               /tmp/ccOsdYLI.o
-beta                                              /tmp/ccOsdYLI.o
-calcNewPosition                                   /tmp/ccOsdYLI.o
-clockA                                            /tmp/ccOsdYLI.o
+_sbss                                             /tmp/ccI33Tdf.o
+a                                                 /tmp/ccI33Tdf.o
+alpha                                             /tmp/ccI33Tdf.o
+analogWrite                                       /tmp/ccI33Tdf.o
+arr                                               /tmp/ccI33Tdf.o
+beta                                              /tmp/ccI33Tdf.o
+calcNewPosition                                   /tmp/ccI33Tdf.o
+clockA                                            /tmp/ccI33Tdf.o
 copysign                                          /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/../../../../riscv32-unknown-elf/lib/libm.a(lib_a-s_copysign.o)
                                                   /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/../../../../riscv32-unknown-elf/lib/libm.a(lib_a-s_scalbn.o)
 cos                                               /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/../../../../riscv32-unknown-elf/lib/libm.a(lib_a-s_cos.o)
-                                                  /tmp/ccOsdYLI.o
-countingTimeToEnd                                 /tmp/ccOsdYLI.o
-curTheta                                          /tmp/ccOsdYLI.o
-curX                                              /tmp/ccOsdYLI.o
-curY                                              /tmp/ccOsdYLI.o
-dTheta                                            /tmp/ccOsdYLI.o
-debug                                             /tmp/ccUFfDxA.o
-ds                                                /tmp/ccOsdYLI.o
-dsDer                                             /tmp/ccOsdYLI.o
-dsIzq                                             /tmp/ccOsdYLI.o
-errorDer                                          /tmp/ccOsdYLI.o
-errorIzq                                          /tmp/ccOsdYLI.o
-errorSignalDer                                    /tmp/ccOsdYLI.o
-errorSignalIzq                                    /tmp/ccOsdYLI.o
-errorTime                                         /tmp/ccOsdYLI.o
-errorsDerArray                                    /tmp/ccOsdYLI.o
-errorsIzqArray                                    /tmp/ccOsdYLI.o
+                                                  /tmp/ccI33Tdf.o
+countingTimeToEnd                                 /tmp/ccI33Tdf.o
+curTheta                                          /tmp/ccI33Tdf.o
+curX                                              /tmp/ccI33Tdf.o
+curY                                              /tmp/ccI33Tdf.o
+dTheta                                            /tmp/ccI33Tdf.o
+debug                                             /tmp/ccyxSRcf.o
+ds                                                /tmp/ccI33Tdf.o
+dsDer                                             /tmp/ccI33Tdf.o
+dsIzq                                             /tmp/ccI33Tdf.o
+errorDer                                          /tmp/ccI33Tdf.o
+errorIzq                                          /tmp/ccI33Tdf.o
+errorSignalDer                                    /tmp/ccI33Tdf.o
+errorSignalIzq                                    /tmp/ccI33Tdf.o
+errorTime                                         /tmp/ccI33Tdf.o
+errorsDerArray                                    /tmp/ccI33Tdf.o
+errorsIzqArray                                    /tmp/ccI33Tdf.o
 fabs                                              /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/../../../../riscv32-unknown-elf/lib/libm.a(lib_a-s_fabs.o)
                                                   /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/../../../../riscv32-unknown-elf/lib/libm.a(lib_a-e_rem_pio2.o)
                                                   /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/../../../../riscv32-unknown-elf/lib/libm.a(lib_a-e_pow.o)
-finish                                            /tmp/ccOsdYLI.o
+finish                                            /tmp/ccI33Tdf.o
 finite                                            /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/../../../../riscv32-unknown-elf/lib/libm.a(lib_a-s_finite.o)
                                                   /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/../../../../riscv32-unknown-elf/lib/libm.a(lib_a-w_pow.o)
 floor                                             /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/../../../../riscv32-unknown-elf/lib/libm.a(lib_a-s_floor.o)
                                                   /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/../../../../riscv32-unknown-elf/lib/libm.a(lib_a-k_rem_pio2.o)
-ftoa                                              /tmp/ccOsdYLI.o
-i                                                 /tmp/ccOsdYLI.o
-intToStr                                          /tmp/ccOsdYLI.o
-integralIndex                                     /tmp/ccOsdYLI.o
-j                                                 /tmp/ccOsdYLI.o
-ka                                                /tmp/ccOsdYLI.o
-kb                                                /tmp/ccOsdYLI.o
-kdDer                                             /tmp/ccOsdYLI.o
-kdIzq                                             /tmp/ccOsdYLI.o
-kiDer                                             /tmp/ccOsdYLI.o
-kiIzq                                             /tmp/ccOsdYLI.o
-kpDer                                             /tmp/ccOsdYLI.o
-kpIzq                                             /tmp/ccOsdYLI.o
-kr                                                /tmp/ccOsdYLI.o
-loop                                              /tmp/ccOsdYLI.o
-main                                              /tmp/ccOsdYLI.o
-                                                  /tmp/ccUFfDxA.o
+ftoa                                              /tmp/ccI33Tdf.o
+i                                                 /tmp/ccI33Tdf.o
+intToStr                                          /tmp/ccI33Tdf.o
+integralIndex                                     /tmp/ccI33Tdf.o
+j                                                 /tmp/ccI33Tdf.o
+ka                                                /tmp/ccI33Tdf.o
+kb                                                /tmp/ccI33Tdf.o
+kdDer                                             /tmp/ccI33Tdf.o
+kdIzq                                             /tmp/ccI33Tdf.o
+kiDer                                             /tmp/ccI33Tdf.o
+kiIzq                                             /tmp/ccI33Tdf.o
+kpDer                                             /tmp/ccI33Tdf.o
+kpIzq                                             /tmp/ccI33Tdf.o
+kr                                                /tmp/ccI33Tdf.o
+loop                                              /tmp/ccI33Tdf.o
+main                                              /tmp/ccI33Tdf.o
+                                                  /tmp/ccyxSRcf.o
 matherr                                           /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/../../../../riscv32-unknown-elf/lib/libm.a(lib_a-s_matherr.o)
                                                   /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/../../../../riscv32-unknown-elf/lib/libm.a(lib_a-w_pow.o)
-micros                                            /tmp/ccOsdYLI.o
+micros                                            /tmp/ccI33Tdf.o
 nan                                               /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/../../../../riscv32-unknown-elf/lib/libm.a(lib_a-s_nan.o)
                                                   /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/../../../../riscv32-unknown-elf/lib/libm.a(lib_a-e_pow.o)
-odometry                                          /tmp/ccOsdYLI.o
-pinEncoderDerB                                    /tmp/ccOsdYLI.o
-pinEncoderDerF                                    /tmp/ccOsdYLI.o
-pinEncoderIzqB                                    /tmp/ccOsdYLI.o
-pinEncoderIzqF                                    /tmp/ccOsdYLI.o
-pinLedFinished                                    /tmp/ccOsdYLI.o
-pinLedFinishing                                   /tmp/ccOsdYLI.o
-pinLedMoving                                      /tmp/ccOsdYLI.o
+odometry                                          /tmp/ccI33Tdf.o
+pinEncoderDerB                                    /tmp/ccI33Tdf.o
+pinEncoderDerF                                    /tmp/ccI33Tdf.o
+pinEncoderIzqB                                    /tmp/ccI33Tdf.o
+pinEncoderIzqF                                    /tmp/ccI33Tdf.o
+pinLedFinished                                    /tmp/ccI33Tdf.o
+pinLedFinishing                                   /tmp/ccI33Tdf.o
+pinLedMoving                                      /tmp/ccI33Tdf.o
 pow                                               /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/../../../../riscv32-unknown-elf/lib/libm.a(lib_a-w_pow.o)
-                                                  /tmp/ccOsdYLI.o
-prevErrDer                                        /tmp/ccOsdYLI.o
-prevErrIzq                                        /tmp/ccOsdYLI.o
-previousCountDer                                  /tmp/ccOsdYLI.o
-previousCountIzq                                  /tmp/ccOsdYLI.o
-print                                             /tmp/ccOsdYLI.o
-print_dec                                         /tmp/ccOsdYLI.o
-print_hex                                         /tmp/ccOsdYLI.o
-printf                                            /tmp/ccOsdYLI.o
-putchar                                           /tmp/ccOsdYLI.o
-pwmValDer                                         /tmp/ccOsdYLI.o
-pwmValIzq                                         /tmp/ccOsdYLI.o
-readEncoders                                      /tmp/ccOsdYLI.o
-reverse                                           /tmp/ccOsdYLI.o
-rho                                               /tmp/ccOsdYLI.o
+                                                  /tmp/ccI33Tdf.o
+prevErrDer                                        /tmp/ccI33Tdf.o
+prevErrIzq                                        /tmp/ccI33Tdf.o
+previousCountDer                                  /tmp/ccI33Tdf.o
+previousCountIzq                                  /tmp/ccI33Tdf.o
+print                                             /tmp/ccI33Tdf.o
+print_dec                                         /tmp/ccI33Tdf.o
+print_hex                                         /tmp/ccI33Tdf.o
+printf                                            /tmp/ccI33Tdf.o
+putchar                                           /tmp/ccI33Tdf.o
+pwmValDer                                         /tmp/ccI33Tdf.o
+pwmValIzq                                         /tmp/ccI33Tdf.o
+readEncoders                                      /tmp/ccI33Tdf.o
+reverse                                           /tmp/ccI33Tdf.o
+rho                                               /tmp/ccI33Tdf.o
 rint                                              /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/../../../../riscv32-unknown-elf/lib/libm.a(lib_a-s_rint.o)
                                                   /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/../../../../riscv32-unknown-elf/lib/libm.a(lib_a-w_pow.o)
 scalbn                                            /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/../../../../riscv32-unknown-elf/lib/libm.a(lib_a-s_scalbn.o)
                                                   /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/../../../../riscv32-unknown-elf/lib/libm.a(lib_a-k_rem_pio2.o)
                                                   /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/../../../../riscv32-unknown-elf/lib/libm.a(lib_a-e_pow.o)
-set_irq_mask                                      /tmp/ccOsdYLI.o
-setup                                             /tmp/ccOsdYLI.o
+set_irq_mask                                      /tmp/ccI33Tdf.o
+setup                                             /tmp/ccI33Tdf.o
 sin                                               /opt/riscv32i/lib/gcc/riscv32-unknown-elf/8.2.0/../../../../riscv32-unknown-elf/lib/libm.a(lib_a-s_sin.o)
-                                                  /tmp/ccOsdYLI.o
-speedDer                                          /tmp/ccOsdYLI.o
-speedIzq                                          /tmp/ccOsdYLI.o
-timeCountSpeedDer                                 /tmp/ccOsdYLI.o
-timeCountSpeedIzq                                 /tmp/ccOsdYLI.o
-timePassedDer                                     /tmp/ccOsdYLI.o
-timePassedIzq                                     /tmp/ccOsdYLI.o
-timeToEnd                                         /tmp/ccOsdYLI.o
-timeToPrint                                       /tmp/ccOsdYLI.o
-updateWheelsMovement                              /tmp/ccOsdYLI.o
-vRefDer                                           /tmp/ccOsdYLI.o
-vRefIzq                                           /tmp/ccOsdYLI.o
+                                                  /tmp/ccI33Tdf.o
+speedDer                                          /tmp/ccI33Tdf.o
+speedIzq                                          /tmp/ccI33Tdf.o
+timeCountSpeedDer                                 /tmp/ccI33Tdf.o
+timeCountSpeedIzq                                 /tmp/ccI33Tdf.o
+timePassedDer                                     /tmp/ccI33Tdf.o
+timePassedIzq                                     /tmp/ccI33Tdf.o
+timeToEnd                                         /tmp/ccI33Tdf.o
+timeToPrint                                       /tmp/ccI33Tdf.o
+updateWheelsMovement                              /tmp/ccI33Tdf.o
+vRefDer                                           /tmp/ccI33Tdf.o
+vRefIzq                                           /tmp/ccI33Tdf.o

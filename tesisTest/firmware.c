@@ -10,6 +10,7 @@ extern uint32_t sram;
 #define reg_uart_clkdiv (*(volatile uint32_t *)0x02000004)
 #define reg_uart_data (*(volatile uint32_t *)0x02000008)
 #define clock (*(volatile uint32_t *)0x03000200)
+#define pin_test (*(volatile uint32_t *)0x03000900)
 
 extern uint32_t _sidata, _sdata, _edata, _sbss, _ebss, _heap_start;
 
@@ -255,7 +256,7 @@ int arr[200];
 #define pinPwmIzqB (*(volatile uint32_t *)0x03000600)
 #define pinPwmDerF (*(volatile uint32_t *)0x03000700)
 #define pinPwmDerB (*(volatile uint32_t *)0x03000800)
-#define maxPWM 100
+#define maxPWM 150
 
 int pwmValIzq = 0;
 int pwmValDer = 0;
@@ -304,17 +305,17 @@ float errorIzq = 0;
 float prevErrIzq = 0;
 float errorSignalIzq = 0;
 
-#define kpIzq  20
-#define kiIzq  2
+#define kpIzq  10
+#define kiIzq 40
 #define kdIzq  1
 
 float errorDer = 0;
 float prevErrDer = 0;
 float errorSignalDer = 0;
 
-#define kpDer  20
-#define kiDer 2
-#define kdDer  1
+#define kpDer  10
+#define kiDer 40
+#define kdDer 1
 
 float integralErrorIzq;
 float integralErrorDer;
@@ -364,17 +365,17 @@ float grad[2] = {0,0};
 //3d plot (x-2)^2+y^2+10*e^(-((x-0.3)^2+(y-0.5)^2)*2)+12*e^(-((x-1.2)^2+(y+0.7)^2)*2) from -1 to 3
 float gradX()
 {
-  return 2*(curX-1);
-  //return 4*(curX-2) -100*(curX)*exp(-5*(pow(curX,2) + pow(curY - 0.7,2))) -120*(curX)*exp(-5*(pow(curX,2) + pow(curY + 1,2))) -120*(curX - 1.2)*exp(-5*(pow(curX - 1.2,2) + pow(curY + 1,2)));
+  //return 2*(curX+1);
+  return 4*(curX-2) -100*(curX)*exp(-5*(pow(curX,2) + pow(curY - 0.7,2))) -120*(curX)*exp(-5*(pow(curX,2) + pow(curY + 1,2))) -120*(curX - 1.2)*exp(-5*(pow(curX - 1.2,2) + pow(curY + 1,2)));
 }
 
 float gradY()
 {
-  return 2*(curY);
-  //return 4*(curY )  -100*(curY - 0.7)*exp(-5*(pow(curX,2) + pow(curY - 0.7,2))) -120*(curY +1)*exp(-5*(pow(curX,2) + pow(curY + 1,2))) -120*(curY + 1)*exp(-5*(pow(curX - 1.2,2) + pow(curY + 1,2)));
+  //return 2*(curY);
+  return 4*(curY )  -100*(curY - 0.7)*exp(-5*(pow(curX,2) + pow(curY - 0.7,2))) -120*(curY +1)*exp(-5*(pow(curX,2) + pow(curY + 1,2))) -120*(curY + 1)*exp(-5*(pow(curX - 1.2,2) + pow(curY + 1,2)));
 }
 
-#define finalX 1
+#define finalX 2
 #define finalY 0
 
 bool reachedNewPoint = true;
@@ -642,11 +643,12 @@ void moveCar()
 
   curPWMValDer = curPWMValDer > maxPWM ? maxPWM : curPWMValDer;
 
+  //printf(curPWMValIzq);
   analogWrite(curPinPWMOffIzq, 0);
-  analogWrite(curPinPwmIzq, curPWMValIzq);
+  analogWrite(curPinPwmIzq, (int) curPWMValIzq);
 
   analogWrite(curPinPWMOffDer, 0);
-  analogWrite(curPinPwmDer, curPWMValDer);
+  analogWrite(curPinPwmDer, (int) curPWMValDer);
 
  /* if(micros()-timeC>10000){
     Serial.print("curX ");
@@ -686,13 +688,14 @@ void setup(){
     /*float clockA = clock;
     reg_leds = 0;*/
 	integralErrorIzq = 200/kiIzq;
-    integralErrorDer =200/kiDer;
+  integralErrorDer =200/kiDer;
 	timeToNewPoint=micros();
 	timeCountSpeedIzq=micros();
 	timeCountSpeedDer=micros();
 }
-
+int cycles=0;
 void loop(){
+  print("a");
   if (finish)
     return;
   readEncoders();
@@ -715,16 +718,15 @@ void loop(){
 
   control();
   moveCar();
-  if (calcDistanceToEnd() < 0.1)
+  if (calcDistanceToEnd() < 0.15)
   {
     //digitalWrite(pinLedFinishing, HIGH);
     if (countingTimeToEnd == false)
     {
       countingTimeToEnd = true;
-      timeToEnd = micros();
       //Serial.println("counting end");
     }
-    else if (micros() - timeToEnd > 500000)
+    else
     {
       finish = true;
       //digitalWrite(pinLedFinished, HIGH);

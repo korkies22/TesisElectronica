@@ -36,6 +36,7 @@ module hardware (
     output pinPwmDerB,
 
     output pin_7,
+    output pin_8,
 
     // encoders
     input pinEncoderIF,
@@ -112,7 +113,8 @@ module hardware (
     reg [31:0] pwm_connectorDB=0;
 
     reg[31:0] pinTest=0;
-    assign pin_7=pinTest[0];
+    assign pin_8=pinTest[0];
+    assign pin_7=clk;
 
     reg writeEncoderI=0;
     reg writeEncoderD=0;
